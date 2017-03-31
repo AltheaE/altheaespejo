@@ -1,0 +1,55 @@
+
+body{
+  font-family: sans-serif;
+}
+  /*background-color: rgb(243, 249, 197);*/
+  .container{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    background-image:url("img/fondo.png") no-repeat;
+    background-size: cover;
+}
+
+h1{
+  font-family: 'Amatica SC', cursive;
+  font-size: 60px;
+  text-align: center;
+  color: rgb(52, 188, 118);
+}
+h2{
+  font-family: 'Amatica SC', cursive;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(52, 188, 142);
+}
+h3{
+  color:rgb(33, 153, 137);
+}
+.e1{
+/*width: 600px*/
+/*margin:0 auto;*/
+color:rgb(46, 48, 47);
+}
+
+#azul{
+  width:300px;
+}
+#behance{
+  width:50px;
+}
+a:link{
+  text-decoration: none;
+  color: rgb(11, 140, 92);
+}
+#superpoderes1{
+  list-style-type: armenian;
+}
+#superpoderes2{
+  list-style-type: georgian;
+}
