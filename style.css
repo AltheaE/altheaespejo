@@ -1,19 +1,30 @@
 
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
   font-family: sans-serif;
-}
+  width: 100%;
+  margin: 0 auto;
+
+
+
   /*background-color: rgb(243, 249, 197);*/
+}
+
   .container{
-    position: fixed;
+    background:url("https://static.pexels.com/photos/2946/dawn-nature-sunset-trees.jpg")no-repeat center center fixed;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
     right: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -1000;
-    background-image:url("img/fondo.png") no-repeat;
-    background-size: cover;
+
+
 }
 
 h1{
@@ -32,13 +43,25 @@ h3{
   color:rgb(33, 153, 137);
 }
 .e1{
-/*width: 600px*/
-/*margin:0 auto;*/
+  padding: 20px;
+}
+th, td, {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.e2{
 color:rgb(46, 48, 47);
+background-color: rgba(255, 255, 255, 0.5);
+padding:20px;
+}
+#intro{
+  color: rgb(255, 255, 255);
 }
 
 #azul{
   width:300px;
+  display: block;
 }
 #behance{
   width:50px;
@@ -52,4 +75,7 @@ a:link{
 }
 #superpoderes2{
   list-style-type: georgian;
+}
+#Inicio{
+
 }
