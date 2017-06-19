@@ -1,0 +1,22 @@
+body {
+  font-family: $fontFamily;
+}
+h1, h2, p {
+  font-weight: $fontLightWeight;
+  color:white;
+}
+
+h1 {
+  font-size: 4.5em;
+}
+
+.italic{
+  font-style: italic;
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+a:hover{
+  color: turquoise;
+}
