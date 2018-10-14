@@ -1,0 +1,26 @@
+body {
+  font-family: $fontFamily;
+}
+.404--text{
+  font-weight:$fontLightWeight;
+  color: white;
+}
+
+h1 {
+  font-size: 4.5em;
+}
+
+.italic{
+  font-style: italic;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: turquoise;
+}
+
+.intro--title, .intro--text{
+  color:#333;
+  font-size: 120px;
+}
