@@ -1,12 +1,6 @@
-#portfolio { width:100%; margin:20px 0px; }
-.tile { float:left; min-height:100px; max-height:150px; width:20%; border:1px #fff solid; }
-.tile:hover { opacity: 0.5; }
-.illust { background:#00C5CD;}
-.gdesign { background: #CC3232;}
-.ui { background: #ddd; }
-
 
 .grid {
+    margin-top:20px;
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -20,7 +14,6 @@
     flex-direction: column;
     justify-content: flex-end;
     box-sizing: border-box;
-    background: #0c9a9a;
     color: #fff;
     grid-column-start: auto;
     grid-row-start: auto;

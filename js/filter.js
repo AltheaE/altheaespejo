@@ -1,7 +1,7 @@
 $(document).ready(function () {
 $(function() {
     var selectedClass = "";
-    $("button").click(function(){
+    $(".btn--filter").click(function(){
     selectedClass = $(this).attr("data-rel");
 $("#portfolio").fadeTo(100, 0.1);
     $("#portfolio div").not("."+selectedClass).fadeOut();
