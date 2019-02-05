@@ -18,7 +18,7 @@
     grid-column-start: auto;
     grid-row-start: auto;
     color: #fff;
-    background-color: #FFC4AD;
+    background-color: #91e0b2;
     /* background:  url('https://images.unsplash.com/photo-1518050947974-4be8c7469f0c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0f8771b31190f1396c9aba686a5f729c&auto=format&fit=crop&w=750&q=80'); */
     background-size: cover;
     background-position: center;
@@ -26,19 +26,19 @@
     transition: transform 0.3s ease-in-out;
     
     &:nth-of-type(2n) {
-      background-color: #FFD166;
+      background-color: #caffa5;
     }
     
     &:nth-of-type(4n) {
-      background-color:#91C7B1 ;
+      background-color:#a7f2a4 ;
     }
     
     &:nth-of-type(5n) {
-      background-color: #F5E0B7;
+      background-color:  #ffecaa;
     }
     
     &:nth-of-type(6n) {
-      background-color:#D4AFB9 ;
+      background-color:#e8d3ff;
     }
     
     &:after {
