@@ -1,12 +1,11 @@
 body {
   font-family: $fontFamily;
 }
+
 .404--text{
-  font-weight:$fontLightWeight;
-  color: white;
+  font-size:72px;
+  color:white;
 }
-
-
 .italic{
   font-style: italic;
 }
@@ -20,4 +19,37 @@ a:hover{
 .intro--title, .intro--text{
   color:#333;
   font-size: 120px;
+}
+
+h1,h2,h3,p{
+  margin:5px;
+}
+
+ul{
+  padding-left: 10px;
+  list-style-type:none;
+  margin-top:10px;
+}
+li{
+  margin-bottom: 5px;
+}
+
+.project-header{
+  h1{
+    color:white;
+    font-size: 30px;
+  }
+  p{
+    color: white;
+  }
+}
+
+.project-intro{
+  font-size: 18px;
+}
+.sidebar-role{
+  font-size:16px;
+  h3{
+
+  }
 }

@@ -1,0 +1,49 @@
+.project-header{
+    height: 150px;
+    padding: 20px;
+    justify-content:space-between;
+    align-items: center;
+    img{
+        width: 50%;
+    }
+}
+.worka{
+    background-color:$worka;
+}
+
+.sidebar-role{
+    margin-left: 25px;
+    width:25%;
+}
+.project-intro-wrapper{
+    margin-top:30px;
+}
+.image-wrapper, .gif-wrapper{
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: 15px solid mediumpurple;
+    padding-bottom: 50px;
+  
+    .img-left{
+        margin-right: 25px;
+    }
+}
+.gif-wrapper{
+    max-width: 1300px;
+    align-items: center;
+    border:0;
+}
+.static{
+    position: absolute;
+    &:hover{
+        opacity: 0;
+    }
+}
+
+.worka-gif{
+    width: 350px;
+    margin-bottom: 50px;
+}
