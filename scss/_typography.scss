@@ -2,10 +2,7 @@ body {
   font-family: $fontFamily;
 }
 
-.404--text{
-  font-size:72px;
-  color:white;
-}
+
 .italic{
   font-style: italic;
 }
@@ -24,7 +21,13 @@ a:hover{
 h1,h2,h3,p{
   margin:5px;
 }
-
+.glitch-title{
+  font-size:72px;
+  color:white;
+}
+.glitch-text{
+  color:white;
+}
 ul{
   padding-left: 10px;
   list-style-type:none;
