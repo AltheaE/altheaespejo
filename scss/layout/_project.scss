@@ -1,3 +1,12 @@
+.workaProject{
+    background-color:$worka;
+}
+.adobeProject{
+    background-color:$xD;
+}
+
+
+
 nav{
     height: 50px;
     display: flex;
@@ -12,9 +21,7 @@ nav{
         width: 50%;
     }
 }
-.worka{
-    background-color:$worka;
-}
+
 .skills-wrapper{
     justify-content: space-between;
     margin-top:10px;

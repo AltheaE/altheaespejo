@@ -8,7 +8,15 @@
 .worka{
     &:hover{
         transition: $hover;
-        background: url("../img/charlesStatic.png");
+        background: url("../img/eamonStatic.png");
+        background-size: cover;
+    }
+}
+
+.entryscape{
+    &:hover{
+        transition: $hover;
+        background: url("../img/locked.png");
         background-size: cover;
     }
 }
