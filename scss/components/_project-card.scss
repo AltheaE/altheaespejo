@@ -1,7 +1,15 @@
 .adobe{
     &:hover{
-        transition: $slide;
-        background: url(https://i.ytimg.com/vi/_vsmMJmJZ9g/maxresdefault_live.jpg);
+        transition: $hover;
+  background: url(https://i.ytimg.com/vi/_vsmMJmJZ9g/maxresdefault_live.jpg)no-repeat;
+ background-size: cover;
+    }
+}
+.worka{
+    &:hover{
+        transition: $hover;
+        background: url("../img/charlesStatic.png");
+        background-size: cover;
     }
 }
 

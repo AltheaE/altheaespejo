@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav>
-     <button onclick="window.history.back()">Back</button>
+     <button class="btn--back"onclick="window.history.back()"><img class src="../img/arrow-back.png" alt="arrow back"></button>
     </nav>
     <section class=" flex project-header worka">
         <div>
@@ -23,63 +23,70 @@
 
     </section>
     <section class=" project-intro-wrapper flex">
-        <div class="sidebar-role">
-            <h3>Client</h3>
-            <a href="https://worka.io/" target="blank"><p>Worka</p></a>
-            <h3>Role</h3>
-            <ul>
-                <li>Visual Designer</li>
-                <li>UI designer</li>
-                <li>Front end developer</li>
-            </ul>
-            <h3>Responsabilities</h3>
-            <ul>
-                <li>Research</li>
-                <li>Ideation</li>
-                <li>Content curation</li>
-                <li>Development of templates</li>
-                <li>Web design</li>
-            </ul>
-            <h3>Skills | Tech stack</h3>
-            <ul>
-                <li>User research</li>
-                <li>Creation of personas</li>
-                <li>Sketch</li>
-                <li>HTML</li>
-                <li>Sass</li>
-                <li>Javascript</li>
-                <li>Nunjucks</li>
-                <li>Git</li>
-                <li>Gulp</li>
-            </ul>
-        </div>
-
        <div>
             <div class="project-intro">
                     <h2>The client</h2>
                     <p><a href="https://worka.io/" target="blank">Worka</a> is an online portfolio platform with different templates to choose from.</p>
                     <h2>The project</h2>
-                    <p>The project would consist of a series of new templates, a website and research about UX patterns and general improvement of user dashboard.</p>
-                    <p>One of the main goals to differentiate with other portfolio competitors was the focus on mobile view and responsiveness of the web.</p>
-            </div>
+                    <p>The project consist of a series of new templates, a website and research about UX patterns and general improvement of user dashboard.</p>
+                    <p>One of the main goals to differentiate itself from other portfolio competitors was the focus on mobile view and responsiveness of the web.</p>
+                    <div class= "flex skills-wrapper">
+                    <div><h3>Role</h3>
+                        <ul>
+                            <li>Visual Designer</li>
+                            <li>UI designer</li>
+                            <li>Front end developer</li>
+                        </ul></div>
+                        <div><h3>Responsabilities</h3>
+                            <ul>
+                                <li>Research</li>
+                                <li>Ideation</li>
+                                <li>Content curation</li>
+                                <li>Development of templates</li>
+                                <li>Web design</li>
+                            </ul></div>
+                        <div><h3 class="skills">Skills | Tech stack</h3>
+                            <ul>
+                                <li>Sketch</li>
+                                <li>Sass</li>
+                                <li>Javascript</li>
+                                <li>Nunjucks</li>
+                                <li>Git</li>
+                                <li>Gulp</li>
+                            </ul></div>
+                        </div>
+                </div>
             <div class="image-wrapper">
-                <img class="img-left" src="../img/workaPhone.png" alt="mockup phone">
-                <a href="https://charlesdemo.worka.io/">
+            <div class="workagif-wrapper">
+                <a href="https://charlesdemo.worka.io/"target="blank">
                      <img  class="worka-gif static" src="../img/charlesStatic.png" alt="template gif">
                      <img  class="worka-gif" src="../img/charles.gif" alt="template gif">
-
                 </a>
-            
+                <p class="hand-text">Hover on the image to see it moving or click to go to the source!<span><img class="hand-arrow-up"src="../img/arrow-up.png" alt=""></span></p>
             </div>
-            <div class="gif-wrapper">
-                <img class="worka-gif "  src="../img/atkinsStatic.png" alt="">   
-                    <img  class="worka-gif" src="../img/bessieStatic.png" alt="template gif">
-                    <img  class="worka-gif" src="../img/dolzStatic.png" alt="template gif">
-                    <img  class="worka-gif" src="../img/eamonStatic.png" alt="template gif">
+                <img class="img-left" src="../img/workaPhone.png" alt="mockup phone">
 
+            
             </div>
        </div>
         
+    </section>
+    <section class="project-content-wrapper">
+            <div class="gif-wrapper">
+                <a href="https://atkinsdemo.worka.io/" target="blank">
+                    <img class="project-img"  src="../img/atkinsStatic.png" alt="">   
+                </a>
+                <a href="https://bessiedemo.worka.io/"target="blank">
+                    <img  class="project-img" src="../img/bessieStatic.png" alt="">
+                </a>
+                <a href="https://eamondemo.worka.io/"target="blank">
+                    <img  class="project-img" src="../img/eamonStatic.png" alt="">
+                </a>
+                <a href="https://dolzdemo.worka.io/"target="blank">
+                        <img  class="project-img" src="../img/dolzStatic.png" alt="">
+                </a>
+    
+                </div>
     </section>
 </body>
 </html>

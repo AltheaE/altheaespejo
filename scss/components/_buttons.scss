@@ -2,10 +2,24 @@
  margin: 10px;
  padding: 12px 24px;
  background-color: white;
- border:2px solid turquoise;
+ border:2px solid #20B7BA;
  transition: ease-in-out 0.6s;
  cursor: pointer;
  &:hover{
-    background-color:turquoise;
+    background-color:#20B7BA;
  }
+  }
+
+  .btn--contact{
+     margin-top:35px;
+  }
+
+  .btn--back{
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+    img{
+       height: 30px;
+    }
+   
   }

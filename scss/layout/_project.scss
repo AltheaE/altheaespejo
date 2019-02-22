@@ -1,5 +1,10 @@
+nav{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
 .project-header{
-    height: 150px;
+    min-height: 150px;
     padding: 20px;
     justify-content:space-between;
     align-items: center;
@@ -10,13 +15,28 @@
 .worka{
     background-color:$worka;
 }
-
+.skills-wrapper{
+    justify-content: space-between;
+    margin-top:10px;
+    border-bottom:2px solid $worka;
+}
 .sidebar-role{
-    margin-left: 25px;
-    width:25%;
+    max-height: 550px;
+    padding: 20px;
+    text-align: left;
+    background: #fff;
+    border-bottom: 4px solid #ccc;
+    border-radius: 6px;
+    transition: all .5s;
+    &:hover{
+        border-color: #39bda7;
+    }
 }
 .project-intro-wrapper{
     margin-top:30px;
+    padding: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .image-wrapper, .gif-wrapper{
     position: relative;
@@ -24,7 +44,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    border-bottom: 15px solid mediumpurple;
     padding-bottom: 50px;
   
     .img-left{
@@ -44,6 +63,17 @@
 }
 
 .worka-gif{
-    width: 350px;
+    width: 450px;
     margin-bottom: 50px;
+}
+
+.project-img{
+    width: 350px;
+    margin-top:20px;
+}
+
+.project-content-wrapper{
+    display: flex;
+    justify-content: center;
+    background-color: $lightgrey;
 }

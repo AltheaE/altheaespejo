@@ -5,115 +5,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="refresh" content="0; URL='http://altheaespejo.com/404" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://unpkg.com/css-doodle@0.4.9/css-doodle.min.js"></script>
+    <script src="js/doodle.js"></script>
     <script src="js/filter.js"></script>
     <title>Althea Espejo</title>
 </head>
 
 <body>
     <div class="intro--wrapper">
-    <h1 class="intro--title">Althea Espejo</h1>
-    <p class="intro--text">I´m a UI designer and illustrator</p>
+        <h1 class="intro--title">Althea Espejo</h1>
+        <p class="intro--text">I´m a UI developer and illustrator 🦄</p>
+        <css-doodle>
+            :doodle {
+            @grid: 24 / 100vmax;
+            }
+            @size: 3px calc(100% * @sqrt(3) + 2px);
+            transform: rotate(@p(45deg, -45deg));
+            background: hsla(@index(), 70%, 68%, @rand(0.8));
+            margin: auto;
+        </css-doodle>
+        <p> Say hi at 📧 <span>althea</span><span>.</span><span>espejo</span><span>@</span><span>gmail</span><span>.com</span></p>
+
     </div>
-<div class="filter--wrapper">
+    <div class="filter--wrapper">
         <button class="btn--filter" data-rel="all">All</button>
         <button class="btn--filter" data-rel="uiWeb">UI Design</button>
         <button class="btn--filter" data-rel="illust">Illustration</button>
         <button class="btn--filter" data-rel="gDesign">Graphic Design</button>
         <button class="btn--filter" data-rel="coding">Coding</button>
         <button class="btn--filter" data-rel="misc">Misc</button>
-</div>
-    
+    </div>
+
 
     <div style="clear:both;"></div>
     <div id="portfolio" class="grid">
-
-        <div class="item uiWeb all adobe">
+        <a class="item uiWeb item--medium all adobe" href="projects/adobeChallenge.html">
             <div class="item__card">
             </div>
-            <a href="projects/adobeChallenge.html">
-                <div class="item__details uiWeb all">
+            <div class="item__details uiWeb all">
                 xD Adobe Challenge
-                </div>
-            </a>
-        </div>
+            </div>
+        </a>
+        <a href="projects/worka.html" class="item uiWeb coding item--large all worka">
+            <div class="item__details uiWeb all">
+                Worka portfolio templates
+            </div>
+        </a>
 
-        <div class="item uiWeb item--medium all">
+        <a class="item uiWeb item--medium all">
             <div class="item__details  uiWeb all">
                 Data app redesign
             </div>
-        </div>
-        <div class="item uiWeb coding all">
+        </a>
+        <a class="item uiWeb coding all">
             <div class="item__details uiWeb coding all">
-                La locomotora
-            </div>
-        </div>
-        <div class="item uiWeb coding item--large all">
-         <a href="projects/worka.html">
-            <div class="item__details uiWeb all">
-                Worka
+                La locomotora website
             </div>
         </a>
-        </div>
-        <div class="item illust all">
+        <a class="item uiWeb all">
+            <div class="item__details uiWeb all">
+                Fikka app
+            </div>
+        </a>
+        <a class="item illust all">
             <div class="item__details illust all">
                 Children illustration
             </div>
-        </div>
-        <div class="item gdesign illust misc all">
+        </a>
+        <a class="item gdesign illust misc all">
             <div class="item__details gdesign illust misc all">
-                Thorns & Horns
+                Thorns & Horns. Toys & illustration
             </div>
-        </div>
-        <div class="item coding all">
+        </a>
+        <a class="item coding all">
             <div class="item__details coding all">
                 30 days JS challenge
             </div>
-        </div>
-        <div class="item illust misc all">
+        </a>
+        <a class="item illust misc all">
             <div class="item__details illust misc all">
                 Pattern design
             </div>
-        </div>
-        <div class="item coding all">
+        </a>
+        <a class="item coding all">
             <div class="item__details coding all">
                 Processing
             </div>
-        </div>
-        <div class="item misc coding all">
+        </a>
+        <a class="item misc coding all">
             <div class="item__details coding all">
                 Electroganchillo
             </div>
-        </div>
-        <div class="item illust all">
+        </a>
+        <a class="item illust all">
             <div class="item__details illust all">
-                Aren
+                Aren fanzine
             </div>
-        </div>
-        <div class="item gdesign all">
+        </a>
+        <a class="item gdesign all">
             <div class="item__details gdesign all">
-                Japón en Granada
+                Japón en Granada poster
             </div>
-        </div>
-        <div class="item uiWeb all">
-            <div class="item__details uiWeb all">
-                Fikka
-            </div>
-        </div>
-        <div class="item coding uiWeb all">
+        </a>
+
+        <a class="item coding uiWeb all">
             <div class="item__details coding uiWeb all">
                 Boreal
             </div>
-        </div>
-        <div class="item misc coding all">
+        </a>
+        <a class="item misc coding all">
             <div class="item__details misc coding all">
                 Playing with Unity
             </div>
-        </div>
-        
+        </a>
+
     </div>
 </body>
 

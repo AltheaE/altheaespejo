@@ -1,14 +1,20 @@
 
-body{
-    padding: 20px;
-}
-
 .intro--wrapper{
-    background: url('http://thecodeplayer.com/uploads/media/geometry.png');
-    padding: 20px;
+/*     background: url('http://thecodeplayer.com/uploads/media/geometry.png');
+ */    padding: 20px;
+    min-height: 400px;
 }
 
 .filter--wrapper{
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
+}
+css-doodle{
+    position: absolute;
+    max-height: 550px;
+    max-width: 100vw;
+    top:0;
+    right: 0;
+    opacity: 0.5;
 }

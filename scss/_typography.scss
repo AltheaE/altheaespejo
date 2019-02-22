@@ -17,10 +17,23 @@ a:hover{
   color:#333;
   font-size: 120px;
 }
+.intro--text{
+  font-weight: 100;
+}
 
 h1,h2,h3,p{
   margin:5px;
 }
+.hand-text{
+  display: flex;
+  align-items: center;
+  font-family:$fonthand;
+  font-size: 12px;
+  .hand-arrow-up{
+    height: 50px;
+  }
+}
+
 .glitch-title{
   font-size:72px;
   color:white;
