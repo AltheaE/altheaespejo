@@ -1,10 +1,46 @@
-.workaProject{
-    background-color:$worka;
-}
-.adobeProject{
-    background-color:$xD;
+
+
+.skills-wrapper{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:10px;
+    border-bottom:2px solid $black-05;
 }
 
+.workaProject{
+.project-header{
+    background-color:$worka;
+}
+.skills-wrapper{
+    border-bottom: 2px solid $worka;
+}
+}
+    
+
+.adobeProject{
+    .project-header{
+        background-color:$xD;
+    }
+    .skills-wrapper{
+        border-bottom: 2px solid $xD;
+    }
+
+}
+.locomotoraProject{
+    .project-header{
+        background-color:$locomotora;
+    }
+    .skills-wrapper{
+        border-bottom: 2px solid $locomotora;
+    }
+    .content-wrapper{
+        width: 80%;
+    }
+    .project-intro{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
 
 
 nav{
@@ -22,11 +58,7 @@ nav{
     }
 }
 
-.skills-wrapper{
-    justify-content: space-between;
-    margin-top:10px;
-    border-bottom:2px solid $worka;
-}
+
 .sidebar-role{
     max-height: 550px;
     padding: 20px;
@@ -70,7 +102,7 @@ nav{
 }
 
 .worka-gif{
-    width: 450px;
+    width: 350px;
     margin-bottom: 50px;
 }
 
@@ -83,4 +115,21 @@ nav{
     display: flex;
     justify-content: center;
     background-color: $lightgrey;
+}
+
+footer{
+    position:sticky;
+}
+img, video, iframe{
+    width: 100%;
+}
+
+
+
+@media(max-width:768px){
+    .locomotoraProject{
+        .project-intro{
+            flex-wrap: wrap;
+        }
+    }
 }
