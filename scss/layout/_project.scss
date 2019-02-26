@@ -24,6 +24,11 @@
     .skills-wrapper{
         border-bottom: 2px solid $xD;
     }
+    .title-underlined{
+        border-bottom: 1px solid $xD;
+        width: 50%;
+    }
+
 
 }
 .locomotoraProject{
@@ -42,7 +47,20 @@
     }
 }
 
+.samrioProject{
+    .project-header{
+        background: linear-gradient(to right, rgba(241,153,166,1) 0%, rgba(241,153,166,1) 12%, rgba(228,39,43,1) 88%, rgba(228,39,43,1) 100%);
+    }
+    .skills-wrapper{
+        border-bottom: 2px solid rgba(241,153,166,1);
+    }
+    .content-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+}
 nav{
     height: 50px;
     display: flex;
@@ -108,9 +126,13 @@ nav{
 
 .project-img{
     width: 350px;
-    margin-top:20px;
+    margin:20px;
 }
-
+.project-img.single{
+    width: 450px;
+    flex-direction: column;
+    align-self: center;
+}
 .project-content-wrapper{
     display: flex;
     justify-content: center;
@@ -123,9 +145,21 @@ footer{
 img, video, iframe{
     width: 100%;
 }
+iframe{
+    margin:20px;
+}
 
+.project-card{
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    flex-direction: column;
+    box-shadow: -2px 2px 10px 0px rgba(#424B54, 0.4);
+    .content-main{
+        justify-content: center;
+    }
 
-
+}
 @media(max-width:768px){
     .locomotoraProject{
         .project-intro{

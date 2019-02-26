@@ -28,12 +28,15 @@ h1,h2,h3,p{
   display: flex;
   align-items: center;
   font-family:$fonthand;
+  margin: 10px;
   font-size: 12px;
   .hand-arrow-up{
     height: 50px;
   }
 }
-
+.icon-inline{
+  width: 20px;
+}
 .glitch-title{
   font-size:72px;
   color:white;

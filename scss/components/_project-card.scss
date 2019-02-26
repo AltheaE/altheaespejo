@@ -1,8 +1,10 @@
+
 .adobe{
     &:hover{
         transition: $hover;
-  background: url(https://i.ytimg.com/vi/_vsmMJmJZ9g/maxresdefault_live.jpg)no-repeat;
+  background: url("../img/pokemonWeb.png");
  background-size: cover;
+ transform: none;
     }
 }
 .worka{
@@ -10,6 +12,7 @@
         transition: $hover;
         background: url("../img/dolzStatic.png");
         background-size: cover;
+        transform: none;
     }
 }
 
@@ -18,6 +21,25 @@
         transition: $hover;
         background: url("../img/locked.png");
         background-size: cover;
+        transform: none;
+    }
+}
+
+.locomotora{
+    &:hover{
+        transition: $hover;
+        background: url("../img/locomotoraStyle.jpg");
+        background-size: cover;
+        transform: none;
+    }
+}
+
+.samrio{
+    &:hover{
+        transition: $hover;
+        background: url("../img/helloKityScreens.jpg");
+        background-size: cover;
+        transform: none;
     }
 }
 
