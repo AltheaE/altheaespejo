@@ -167,6 +167,9 @@ iframe{
     .mobile-back{
         display: flex;
     }
+    .project-img{
+        max-width: 300px;
+    }
     .locomotoraProject{
         .project-intro{
             flex-wrap: wrap;
@@ -178,6 +181,13 @@ iframe{
         }
         .content-main{
             flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    .samrioProject{
+        .content-wrapper>div{
+            flex-wrap: wrap;
+            justify-content: center;
         }
     }
 }
