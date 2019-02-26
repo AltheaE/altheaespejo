@@ -125,7 +125,7 @@ nav{
 }
 
 .project-img{
-    width: 350px;
+    max-width: 350px;
     margin:20px;
 }
 .project-img.single{
@@ -160,9 +160,23 @@ iframe{
     }
 
 }
+.mobile-back{
+    display: none;
+}
 @media(max-width:768px){
+    .mobile-back{
+        display: flex;
+    }
     .locomotoraProject{
         .project-intro{
+            flex-wrap: wrap;
+        }
+    }
+    .adobeProject{
+        .project-card{
+            margin:0;
+        }
+        .content-main{
             flex-wrap: wrap;
         }
     }

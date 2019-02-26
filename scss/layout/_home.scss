@@ -18,3 +18,9 @@ css-doodle{
     right: 0;
     opacity: 0.5;
 }
+
+@media(max-width:768px){
+    css-doodle, .intro--wrapper{
+        max-height: 300px;
+    }
+}
