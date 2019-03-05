@@ -13,14 +13,26 @@ a:hover{
   color: turquoise;
 }
 
-.intro--title, .intro--text{
-  color:#333;
+.intro--h1{
+  color:$textColour;
   font-size: 120px;
+  pointer-events: none;
+  font-family: $fontTitle;
+
+}
+.intro--h2{
+  color:$textColour;
+  font-size: 120px;
+  pointer-events: none;
+font-size: 100px;
 }
 .intro--text{
+  color:$textColour;
   font-weight: 100;
-}
+  pointer-events:none;
+  font-size: 60px;
 
+}
 h1,h2,h3,p{
   margin:5px;
 }
@@ -69,7 +81,5 @@ li{
 }
 .sidebar-role{
   font-size:16px;
-  h3{
 
-  }
 }

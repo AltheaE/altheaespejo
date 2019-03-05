@@ -1,14 +1,39 @@
 
-.intro--wrapper{
-/*     background: url('http://thecodeplayer.com/uploads/media/geometry.png');
- */    padding: 20px;
-    min-height: 400px;
-}
 
-.filter--wrapper{
+.intro--wrapper{
+    padding: 20px;
+    height: 400px;
+    width:100vw;
+    pointer-events: none;
+    user-select: none;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+.filter--wrapper, .filter--btn__wrapper{
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+    z-index: 2;
+    position: relative;
+}
+.filter--wrapper{
+    display: block;
+    margin-top:100px;
+}
+
+
+
+  canvas {
+	z-index: 1;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+    height: 500px
 }
 css-doodle{
     position: absolute;
@@ -19,8 +44,3 @@ css-doodle{
     opacity: 0.5;
 }
 
-@media(max-width:768px){
-    css-doodle, .intro--wrapper{
-        max-height: 300px;
-    }
-}

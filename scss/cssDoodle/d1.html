@@ -7,3 +7,15 @@
     background: hsla(@index(), 70%, 68%, @rand(0.6));
     margin: auto;
   </css-doodle> 
+
+  ////
+
+  <css-doodle>
+      :doodle {
+      @grid: 15 / 100vmax;
+      }
+      @size: 2px calc(100% * @sqrt(12) + 2px);
+      transform: rotate(@p(45deg, -45deg));
+      background: hsla(@index(), 70%, 68%, @rand(0.8));
+      margin: auto;
+  </css-doodle>

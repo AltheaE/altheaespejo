@@ -1,8 +1,19 @@
 
 @media(max-width:768px){
 
-.intro--title, .intro--text{
-    color:#333;
-    font-size: 28px;
-  }
+  css-doodle, canvas, .intro--wrapper{
+    max-height: 300px;
+}
+.intro--h1{
+    font-size: 40px;
+}
+.intro--h2{
+    font-size: 30px;
+}
+.intro--text{
+    font-size: 26px;
+}
+.filter--wrapper{
+  margin-top: 0;
+}
 }

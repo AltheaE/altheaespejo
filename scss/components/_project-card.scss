@@ -1,7 +1,7 @@
 
 .adobe{
     &:hover{
-        transition: $hover;
+        transition: $slide;
   background: url("../img/pokemonWeb.png");
  background-size: cover;
  transform: none;
@@ -9,7 +9,7 @@
 }
 .worka{
     &:hover{
-        transition: $hover;
+        transition: $slide;
         background: url("../img/dolzStatic.png");
         background-size: cover;
         transform: none;
@@ -18,7 +18,7 @@
 
 .entryscape{
     &:hover{
-        transition: $hover;
+        transition: $slide;
         background: url("../img/locked.png");
         background-size: cover;
         transform: none;
@@ -27,7 +27,7 @@
 
 .locomotora{
     &:hover{
-        transition: $hover;
+        transition: $slide;
         background: url("../img/locomotoraStyle.jpg");
         background-size: cover;
         transform: none;
@@ -36,7 +36,7 @@
 
 .samrio{
     &:hover{
-        transition: $hover;
+        transition: $slide;
         background: url("../img/helloKityScreens.jpg");
         background-size: cover;
         transform: none;
