@@ -42,6 +42,9 @@ a:hover {
   pointer-events: none;
   font-size: 60px; }
 
+.filter--text {
+  font-size: 40px; }
+
 h1, h2, h3, p {
   margin: 5px; }
 
@@ -119,10 +122,9 @@ li {
   grid-row-start: auto;
   color: #fff;
   background-color: #91e0b2;
-  /* background:  url('https://images.unsplash.com/photo-1518050947974-4be8c7469f0c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0f8771b31190f1396c9aba686a5f729c&auto=format&fit=crop&w=750&q=80'); */
   background-size: cover;
   background-position: center;
-  box-shadow: -2px 2px 10px 0px rgba(66, 75, 84, 0.4);
+  box-shadow: 2px 2px 6px 0px rgba(66, 75, 84, 0.3);
   transition: transform 0.3s ease-in-out; }
   .item:nth-of-type(2n) {
     background-color: #caffa5; }
@@ -179,7 +181,7 @@ li {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-evenly; }
 
 .filter--wrapper, .filter--btn__wrapper {
   display: flex;
@@ -208,17 +210,20 @@ css-doodle {
   right: 0;
   opacity: 0.5; }
 
-@media (max-width: 768px) {
-  css-doodle, canvas, .intro--wrapper {
-    max-height: 300px; }
-  .intro--h1 {
-    font-size: 40px; }
-  .intro--h2 {
-    font-size: 30px; }
-  .intro--text {
-    font-size: 26px; }
-  .filter--wrapper {
-    margin-top: 0; } }
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  background-color: white;
+  box-shadow: 2px 2px 6px 0px rgba(66, 75, 84, 0.3);
+  width: 100%;
+  top: 0;
+  align-items: center;
+  padding: 10px; }
+  header .header-title a {
+    color: #333;
+    text-decoration: none; }
 
 .skills-wrapper {
   flex-wrap: wrap;
@@ -272,6 +277,7 @@ nav {
   align-items: center; }
 
 .project-header {
+  margin-top: 50px;
   min-height: 150px;
   padding: 20px;
   justify-content: space-between;
@@ -378,47 +384,47 @@ iframe {
 
 @keyframes noise-anim {
   0% {
-    clip: rect(91px, 9999px, 7px, 0); }
+    clip: rect(63px, 9999px, 72px, 0); }
   5% {
-    clip: rect(36px, 9999px, 48px, 0); }
+    clip: rect(15px, 9999px, 89px, 0); }
   10% {
-    clip: rect(67px, 9999px, 96px, 0); }
-  15% {
-    clip: rect(44px, 9999px, 27px, 0); }
-  20% {
-    clip: rect(73px, 9999px, 65px, 0); }
-  25% {
-    clip: rect(79px, 9999px, 73px, 0); }
-  30% {
-    clip: rect(63px, 9999px, 61px, 0); }
-  35% {
-    clip: rect(75px, 9999px, 22px, 0); }
-  40% {
-    clip: rect(97px, 9999px, 40px, 0); }
-  45% {
-    clip: rect(29px, 9999px, 88px, 0); }
-  50% {
     clip: rect(93px, 9999px, 29px, 0); }
+  15% {
+    clip: rect(91px, 9999px, 11px, 0); }
+  20% {
+    clip: rect(90px, 9999px, 53px, 0); }
+  25% {
+    clip: rect(65px, 9999px, 38px, 0); }
+  30% {
+    clip: rect(9px, 9999px, 4px, 0); }
+  35% {
+    clip: rect(48px, 9999px, 4px, 0); }
+  40% {
+    clip: rect(73px, 9999px, 12px, 0); }
+  45% {
+    clip: rect(55px, 9999px, 77px, 0); }
+  50% {
+    clip: rect(17px, 9999px, 10px, 0); }
   55% {
-    clip: rect(5px, 9999px, 66px, 0); }
+    clip: rect(15px, 9999px, 1px, 0); }
   60% {
-    clip: rect(12px, 9999px, 27px, 0); }
+    clip: rect(71px, 9999px, 53px, 0); }
   65% {
-    clip: rect(1px, 9999px, 38px, 0); }
+    clip: rect(25px, 9999px, 43px, 0); }
   70% {
-    clip: rect(66px, 9999px, 67px, 0); }
+    clip: rect(15px, 9999px, 79px, 0); }
   75% {
-    clip: rect(36px, 9999px, 71px, 0); }
+    clip: rect(71px, 9999px, 92px, 0); }
   80% {
-    clip: rect(33px, 9999px, 42px, 0); }
+    clip: rect(6px, 9999px, 77px, 0); }
   85% {
-    clip: rect(7px, 9999px, 10px, 0); }
+    clip: rect(98px, 9999px, 50px, 0); }
   90% {
-    clip: rect(59px, 9999px, 85px, 0); }
+    clip: rect(11px, 9999px, 11px, 0); }
   95% {
-    clip: rect(81px, 9999px, 51px, 0); }
+    clip: rect(79px, 9999px, 73px, 0); }
   100% {
-    clip: rect(60px, 9999px, 36px, 0); } }
+    clip: rect(66px, 9999px, 23px, 0); } }
 
 .glitch:after {
   content: attr(data-text);
@@ -434,47 +440,47 @@ iframe {
 
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(84px, 9999px, 26px, 0); }
+    clip: rect(29px, 9999px, 50px, 0); }
   5% {
-    clip: rect(86px, 9999px, 70px, 0); }
+    clip: rect(85px, 9999px, 7px, 0); }
   10% {
-    clip: rect(8px, 9999px, 75px, 0); }
+    clip: rect(88px, 9999px, 18px, 0); }
   15% {
-    clip: rect(21px, 9999px, 34px, 0); }
+    clip: rect(25px, 9999px, 13px, 0); }
   20% {
-    clip: rect(72px, 9999px, 91px, 0); }
+    clip: rect(12px, 9999px, 100px, 0); }
   25% {
-    clip: rect(9px, 9999px, 75px, 0); }
+    clip: rect(17px, 9999px, 73px, 0); }
   30% {
-    clip: rect(42px, 9999px, 50px, 0); }
+    clip: rect(59px, 9999px, 81px, 0); }
   35% {
-    clip: rect(27px, 9999px, 36px, 0); }
+    clip: rect(36px, 9999px, 58px, 0); }
   40% {
-    clip: rect(59px, 9999px, 38px, 0); }
+    clip: rect(5px, 9999px, 40px, 0); }
   45% {
-    clip: rect(67px, 9999px, 100px, 0); }
+    clip: rect(38px, 9999px, 16px, 0); }
   50% {
-    clip: rect(42px, 9999px, 17px, 0); }
+    clip: rect(3px, 9999px, 88px, 0); }
   55% {
-    clip: rect(57px, 9999px, 5px, 0); }
+    clip: rect(23px, 9999px, 28px, 0); }
   60% {
-    clip: rect(97px, 9999px, 62px, 0); }
+    clip: rect(59px, 9999px, 74px, 0); }
   65% {
-    clip: rect(89px, 9999px, 60px, 0); }
+    clip: rect(3px, 9999px, 92px, 0); }
   70% {
-    clip: rect(86px, 9999px, 32px, 0); }
+    clip: rect(87px, 9999px, 82px, 0); }
   75% {
-    clip: rect(38px, 9999px, 73px, 0); }
+    clip: rect(32px, 9999px, 52px, 0); }
   80% {
-    clip: rect(73px, 9999px, 91px, 0); }
+    clip: rect(92px, 9999px, 94px, 0); }
   85% {
-    clip: rect(42px, 9999px, 39px, 0); }
+    clip: rect(82px, 9999px, 46px, 0); }
   90% {
-    clip: rect(62px, 9999px, 59px, 0); }
+    clip: rect(41px, 9999px, 94px, 0); }
   95% {
-    clip: rect(92px, 9999px, 31px, 0); }
+    clip: rect(85px, 9999px, 2px, 0); }
   100% {
-    clip: rect(47px, 9999px, 55px, 0); } }
+    clip: rect(49px, 9999px, 61px, 0); } }
 
 .glitch:before {
   content: attr(data-text);
@@ -496,7 +502,7 @@ iframe {
   background-color: transparent;
   cursor: pointer; }
   .btn--back img {
-    height: 30px;
+    height: 25px;
     width: auto; }
 
 .btn {
@@ -587,6 +593,32 @@ iframe {
   background-size: cover;
   transform: none; }
 
+@media (max-width: 768px) {
+  css-doodle, canvas, .intro--wrapper {
+    max-height: 300px; }
+  .intro--h1 {
+    font-size: 40px; }
+  .intro--h2 {
+    font-size: 30px; }
+  .intro--text {
+    font-size: 24px; }
+  .filter--wrapper {
+    margin-top: 0; }
+  .filter--text {
+    font-size: 20px; }
+  .project-header {
+    margin-top: 0; }
+  .header-text {
+    font-size: 14px; } }
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  .intro--h1 {
+    font-size: 100px; }
+  .intro--h2 {
+    font-size: 70px; }
+  .intro--text {
+    font-size: 40px; } }
+
 .hidden {
   display: none; }
 
@@ -595,3 +627,7 @@ iframe {
 
 .flex {
   display: flex; }
+
+.flex-sb {
+  display: flex;
+  justify-content: space-between; }

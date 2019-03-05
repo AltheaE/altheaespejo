@@ -11,9 +11,29 @@
     font-size: 30px;
 }
 .intro--text{
-    font-size: 26px;
+    font-size: 24px;
 }
 .filter--wrapper{
   margin-top: 0;
 }
+.filter--text{
+  font-size: 20px;
+}
+.project-header{
+  margin-top: 0;
+}
+.header-text{
+  font-size: 14px;
+}
+}
+@media(min-width:769px)and (max-width:1440px){
+  .intro--h1{
+    font-size: 100px;
+  }
+  .intro--h2{
+    font-size: 70px;
+  }
+  .intro--text{
+    font-size: 40px;
+  }
 }

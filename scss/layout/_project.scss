@@ -1,4 +1,20 @@
 
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: white;
+    box-shadow: 2px 2px 6px 0px rgba(66, 75, 84, 0.3);
+    width: 100%;
+    top: 0;
+    align-items: center;
+    padding: 10px;
+    .header-title a{
+        color: $textColour;
+        text-decoration: none;
+    }
+}
 
 .skills-wrapper{
     flex-wrap: wrap;
@@ -67,6 +83,7 @@ nav{
     align-items: center;
 }
 .project-header{
+    margin-top: 50px;
     min-height: 150px;
     padding: 20px;
     justify-content:space-between;
