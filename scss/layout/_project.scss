@@ -93,6 +93,20 @@ header{
        margin:0;
     }
 }
+.unityProject{
+    .project-header{
+        background-color:$green;
+        img{
+            width: 20%;
+        }
+    }
+    .skills-wrapper{
+        border-bottom: 2px solid $green;
+    }
+    .project-img{
+        max-width: 950px;
+    }
+}
 nav{
     height: 50px;
     display: flex;
@@ -109,7 +123,9 @@ nav{
     }
 }
 
-
+.project-header-text{
+    width: 50%;
+}
 .sidebar-role{
     max-height: 550px;
     padding: 20px;
