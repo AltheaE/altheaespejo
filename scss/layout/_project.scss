@@ -77,6 +77,22 @@ header{
     }
 
 }
+
+.arenProject{
+    .project-header{
+        margin-top:50px;
+        background-color: $aren;
+        img{
+            width: 35%;
+        }
+    }
+    .skills-wrapper{
+        border-bottom: 2px solid $aren;
+    }
+    iframe{
+       margin:0;
+    }
+}
 nav{
     height: 50px;
     display: flex;
@@ -108,6 +124,7 @@ nav{
 }
 .project-intro-wrapper{
     margin-top:30px;
+    margin-bottom: 30px;
     padding: 20px;
     justify-content: space-evenly;
     flex-wrap: wrap;

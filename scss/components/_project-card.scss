@@ -43,4 +43,12 @@
     }
 }
 
+.aren{
+    &:hover{
+        transition: $slide;
+        background: url("../img/aren.png");
+        background-size: cover;
+        transform: none;
+    }
+}
  
