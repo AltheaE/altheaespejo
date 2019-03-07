@@ -2,7 +2,7 @@
 .adobe{
     &:hover{
         transition: $slide;
-  background: url("../img/pokemonWeb.png");
+  background: url("../img/adobe/pokemonWeb.png");
  background-size: cover;
  transform: none;
     }
@@ -10,7 +10,7 @@
 .worka{
     &:hover{
         transition: $slide;
-        background: url("../img/dolzStatic.png");
+        background: url("../img/worka/dolzStatic.png");
         background-size: cover;
         transform: none;
     }
@@ -28,7 +28,7 @@
 .locomotora{
     &:hover{
         transition: $slide;
-        background: url("../img/locomotoraStyle.jpg");
+        background: url("../img/locomotora/locomotoraStyle.jpg");
         background-size: cover;
         transform: none;
     }
@@ -37,7 +37,7 @@
 .samrio{
     &:hover{
         transition: $slide;
-        background: url("../img/helloKityScreens.jpg");
+        background: url("../img/sanrio/helloKityScreens.jpg");
         background-size: cover;
         transform: none;
     }
@@ -46,7 +46,7 @@
 .aren{
     &:hover{
         transition: $slide;
-        background: url("../img/aren.png");
+        background: url("../img/aren/aren.png");
         background-size: cover;
         transform: none;
     }
@@ -55,7 +55,16 @@
 .unity{
     &:hover{
         transition: $slide;
-        background: url("../img/unity.gif");
+        background: url("../img/unity/unity.gif");
+        background-size: cover;
+        transform: none;
+    }
+}
+ 
+.js{
+    &:hover{
+        transition: $slide;
+        background: url("../img/jsChallenge/drumkit.png");
         background-size: cover;
         transform: none;
     }

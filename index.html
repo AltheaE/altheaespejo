@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:600|Roboto" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://unpkg.com/css-doodle@0.4.9/css-doodle.min.js"></script>
@@ -15,47 +15,48 @@
     <script src="https://codepen.io/darrylhuffman/pen/zogYQW.js"></script>
     <script src="js/paint.js"></script>
     <title>💻🦄🎨 || Althea Espejo</title>
-    <link rel="icon" type="image/png" href="img/favicon althea.png"/>
+    <link rel="icon" type="image/png" href="img/favicon althea.png" />
     <meta name="description" content="UI developer and illustrator. I like to play with code, design and colour!">
 </head>
 
 <body>
-        <script>
-                $(document).ready(function(){
-                    var slider = new gooSlider('body');
-                    var l1,l2;
-                    $('body').click(function(){
-                        var c = 'hsla('+ (Math.floor(Math.random()*7) * 20) +',82%,68%,1)';
-                        if(c != l1 && c != l2){
-                            slider.wave(c, function(){});
-                            l2 = l1;
-                            l1 = c;
-                        } else {
-                            $('body').click();
-                        }
-                    });
-                    
-                    var count = 5,
-                        cur = 0;
-                    function start(){
-                        slider.wave('hsla(151, 95%, 65%, 1)', function(){});
-                        cur++;
-                        if(cur<count){
-                            setTimeout(function(){
-                                start();
-                            }, 1500)
-                        }
-                    }
-                    start();
-                });
-            </script>
+    <script>
+        $(document).ready(function () {
+            var slider = new gooSlider('body');
+            var l1, l2;
+            $('body').click(function () {
+                var c = 'hsla(' + (Math.floor(Math.random() * 7) * 20) + ',82%,68%,1)';
+                if (c != l1 && c != l2) {
+                    slider.wave(c, function () {});
+                    l2 = l1;
+                    l1 = c;
+                } else {
+                    $('body').click();
+                }
+            });
+
+            var count = 5,
+                cur = 0;
+
+            function start() {
+                slider.wave('hsla(151, 95%, 65%, 1)', function () {});
+                cur++;
+                if (cur < count) {
+                    setTimeout(function () {
+                        start();
+                    }, 1500)
+                }
+            }
+            start();
+        });
+    </script>
     <div class="intro--wrapper">
         <div>
-                <h1 class="intro--h1">Althea Espejo</h1>
-                <h2 class="intro--h2">UI developer & illustrator 🦄</h2>
+            <h1 class="intro--h1">Althea Espejo</h1>
+            <h2 class="intro--h2">UI developer & illustrator 🦄</h2>
         </div>
 
-        <p class="intro--text"> Say hi at 📧 <span>althea</span><span>.</span><span>espejo</span><span>@</span><span>gmail</span><span>.com</span></p>
+        <p class="intro--text"> Say hi at 📧 <a href="mailto:"> <span>althea</span><span>.</span><span>espejo</span><span>@</span><span>gmail</span><span>.com</span></p></a>
     </div>
 
 
@@ -63,21 +64,22 @@
     <div class="filter--wrapper">
         <p class="filter--text">What type of work do you want see?</p>
         <div class="filter--btn__wrapper">
-        <button class="btn btn--stripe btn--all btn--active" data-rel="all">All</button>
-        <button class="btn btn--stripe" data-rel="uiWeb">UI Design</button>
-        <button class="btn btn--stripe" data-rel="illust">Illustration</button>
-        <button class="btn btn--stripe" data-rel="gDesign">Graphic Design</button>
-        <button class="btn btn--stripe" data-rel="coding">Coding</button>
-        <button class="btn btn--stripe" data-rel="misc">Misc</button>
+            <button class="btn btn--stripe btn--all btn--active" data-rel="all">All</button>
+            <button class="btn btn--stripe" data-rel="uiWeb">UI Design</button>
+            <button class="btn btn--stripe" data-rel="illust">Illustration</button>
+            <button class="btn btn--stripe" data-rel="gDesign">Graphic Design</button>
+            <button class="btn btn--stripe" data-rel="coding">Coding</button>
+            <button class="btn btn--stripe" data-rel="misc">Misc</button>
+        </div>
     </div>
-</div>
 
 
-<!--     <div style="clear:both;"></div>
- -->    <div id="portfolio" class="grid">
+    <!--     <div style="clear:both;"></div>
+ -->
+    <div id="portfolio" class="grid">
 
-        <a href="projects/adobe.html" class="item uiWeb item--medium all adobe" >
-           
+        <a href="projects/adobe.html" class="item uiWeb item--medium all adobe">
+
             <div class="item__details uiWeb all">
                 xD Adobe Challenge
             </div>
@@ -98,7 +100,7 @@
             </div>
         </a>
 
-        <a  href="projects/locomotora.html"class="item uiWeb coding all locomotora">
+        <a href="projects/locomotora.html" class="item uiWeb coding all locomotora">
             <div class="item__details uiWeb coding all">
                 La locomotora website
             </div>
@@ -106,6 +108,23 @@
         <a href="projects/aren.html" class="item item--large illust all aren">
             <div class="item__details illust all">
                 Illustrated epic poem
+            </div>
+        </a>
+
+        <a href="projects/unity.html" class="item misc coding all unity">
+            <div class="item__details misc coding all">
+                Playing with Unity
+            </div>
+        </a>
+
+        <a href="projects/jsChallenge.html" class="item  item--medium coding all js">
+            <div class="item__details coding all">
+                Javascript challenge
+            </div>
+        </a>
+        <a class="item item--medium gDesign illust misc all">
+            <div class="item__details  gDesign illust misc all">
+                Thorns & Horns. Toys & illustration
             </div>
         </a>
         <a class="item uiWeb all">
@@ -116,21 +135,6 @@
         <a class="item illust all">
             <div class="item__details illust all">
                 Editorial illustration
-            </div>
-        </a>
-        <a  href="projects/unity.html" class="item misc coding all unity">
-            <div class="item__details misc coding all">
-                Playing with Unity
-            </div>
-        </a>
-        <a class="item item--medium gDesign illust misc all">
-            <div class="item__details  gDesign illust misc all">
-                Thorns & Horns. Toys & illustration
-            </div>
-        </a>
-        <a class="item coding all">
-            <div class="item__details coding all">
-                Javascript challenge
             </div>
         </a>
         <a class="item coding uiWeb all">
@@ -145,7 +149,7 @@
         </a>
         <a class="item coding all">
             <div class="item__details coding all">
-               Playing with Processing
+                Playing with Processing
             </div>
         </a>
         <a class="item misc coding all">
@@ -153,15 +157,15 @@
                 Electroganchillo
             </div>
         </a>
-     
+
         <a class="item gDesignn all">
             <div class="item__details gDesign all">
                 Japón en Granada poster
             </div>
         </a>
 
-       
-      
+
+
 
     </div>
 

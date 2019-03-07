@@ -1,4 +1,31 @@
-
+@media(max-width:768px){
+  .mobile-back{
+      display: flex;
+  }
+  .project-img{
+      max-width: 300px;
+  }
+  .locomotoraProject{
+      .project-intro{
+          flex-wrap: wrap;
+      }
+  }
+  .adobeProject{
+      .project-card{
+          margin:0;
+      }
+      .content-main{
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+  }
+  .samrioProject{
+      .content-wrapper>div{
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+  }
+}
 @media(max-width:768px){
 
   css-doodle, canvas, .intro--wrapper{
@@ -13,15 +40,28 @@
 .intro--text{
     font-size: 24px;
 }
+.project-intro-wrapper{
+  margin-top:10px;
+  .skills-wrapper{
+    display: none;
+  }
+  .project-intro{
+    margin-left:0;
+    h2{
+      font-size: 30px;
+    }
+  }
+}
+
+
 .filter--wrapper{
   margin-top: 0;
 }
 .filter--text{
   font-size: 20px;
 }
-.project-header{
-  margin-top: 0;
-}
+
+
 .header-text{
   font-size: 14px;
   text-align: end;
@@ -29,7 +69,20 @@
 .btn--back img{
  display: none;
 }
-
+.unityProject{
+  .project-header{
+    img{
+      width: 50%;
+    }
+  }
+}
+.jsProject{
+  .project-header{
+    img{
+      width: 40%;
+    }
+  }
+}
 }
 @media(min-width:769px)and (max-width:1440px){
   .intro--h1{

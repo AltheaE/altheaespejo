@@ -10,6 +10,7 @@ header{
     top: 0;
     align-items: center;
     padding: 10px;
+    z-index: 6;
     .header-title a{
         color: $textColour;
         text-decoration: none;
@@ -17,6 +18,8 @@ header{
 }
 
 .skills-wrapper{
+    max-height: 500px;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top:10px;
@@ -28,6 +31,7 @@ header{
     background-color:$worka;
 }
 .skills-wrapper{
+    max-height: 500px;
     border-bottom: 2px solid $worka;
 }
 }
@@ -41,7 +45,8 @@ header{
         border-bottom: 2px solid $xD;
     }
     .title-underlined{
-        border-bottom: 1px solid $xD;
+        border-bottom: 2px solid $xD;
+        padding-bottom: 5px;
         width: 50%;
     }
 
@@ -107,6 +112,24 @@ header{
         max-width: 950px;
     }
 }
+
+.jsProject{
+    .project-header{
+       h1,p{
+           color: $textColour;
+       }
+        background-color:$js;
+        img{
+            width: 20%;
+        }
+    }
+    .skills-wrapper{
+        border-bottom: 2px solid $js;
+    }
+    .project-img{
+        max-width: 950px;
+    }
+}
 nav{
     height: 50px;
     display: flex;
@@ -139,12 +162,14 @@ nav{
     }
 }
 .project-intro-wrapper{
-    margin-top:30px;
+    margin-top:130px;
     margin-bottom: 30px;
     padding: 20px;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    .project-intro{
+        margin-left: 150px;
+    }
 }
+
 .image-wrapper, .gif-wrapper{
     position: relative;
     margin-top: 50px;
@@ -161,12 +186,6 @@ nav{
     max-width: 1300px;
     align-items: center;
     border:0;
-}
-.static{
-    position: absolute;
-    &:hover{
-        opacity: 0;
-    }
 }
 
 .worka-gif{
@@ -212,32 +231,4 @@ iframe{
 }
 .mobile-back{
     display: none;
-}
-@media(max-width:768px){
-    .mobile-back{
-        display: flex;
-    }
-    .project-img{
-        max-width: 300px;
-    }
-    .locomotoraProject{
-        .project-intro{
-            flex-wrap: wrap;
-        }
-    }
-    .adobeProject{
-        .project-card{
-            margin:0;
-        }
-        .content-main{
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    }
-    .samrioProject{
-        .content-wrapper>div{
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    }
 }

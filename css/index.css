@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes stripe-slide {
   0% {
     background-position: 0% 0; }
@@ -19,6 +20,7 @@ body {
   font-style: italic; }
 
 a {
+  color: #333;
   text-decoration: none; }
 
 a:hover {
@@ -57,6 +59,10 @@ h1, h2, h3, p {
   .hand-text .hand-arrow-up {
     height: 50px; }
 
+.accent-text {
+  font-weight: bold;
+  font-size: 16px; }
+
 .icon-inline {
   width: 20px; }
 
@@ -83,11 +89,74 @@ li {
 .project-header p {
   color: white; }
 
-.project-intro {
-  font-size: 18px; }
+.header-text a, .intro--text a {
+  color: #333; }
+
+.project-intro h2 {
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: "Raleway", sans-serif; }
+  .project-intro h2 a {
+    color: #333; }
+
+.project-intro p {
+  font-size: 18px;
+  font-weight: 300px;
+  line-height: 2; }
 
 .sidebar-role {
   font-size: 16px; }
+
+:root {
+  --animation-delay: 0;
+  --duration: 800ms;
+  --iterations: 1; }
+
+/* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
+.reveal-text,
+.reveal-text::after {
+  animation-delay: var(--animation-delay, 4s);
+  animation-iteration-count: var(--iterations, 1);
+  animation-duration: var(--duration, 800ms);
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+
+.reveal-text {
+  position: relative;
+  font-size: 10vw;
+  animation-name: clip-text;
+  white-space: nowrap;
+  cursor: default; }
+  .reveal-text::after {
+    content: "";
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    background-color: #d81b60;
+    transform-origin: 0 50%;
+    pointer-events: none;
+    animation-name: text-revealer; }
+
+@keyframes clip-text {
+  from {
+    clip-path: inset(0 100% 0 0); }
+  to {
+    clip-path: inset(0 0 0 0); } }
+
+@keyframes text-revealer {
+  0%, 50% {
+    transform-origin: 0 50%; }
+  60%, 100% {
+    transform-origin: 100% 50%; }
+  60% {
+    transform: scaleX(1); }
+  100% {
+    transform: scaleX(0); } }
 
 .container--404 {
   background-color: black;
@@ -220,12 +289,15 @@ header {
   width: 100%;
   top: 0;
   align-items: center;
-  padding: 10px; }
+  padding: 10px;
+  z-index: 6; }
   header .header-title a {
     color: #333;
     text-decoration: none; }
 
 .skills-wrapper {
+  max-height: 500px;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 10px;
@@ -235,6 +307,7 @@ header {
   background-color: #54347F; }
 
 .workaProject .skills-wrapper {
+  max-height: 500px;
   border-bottom: 2px solid #54347F; }
 
 .adobeProject .project-header {
@@ -244,7 +317,8 @@ header {
   border-bottom: 2px solid #d81b60; }
 
 .adobeProject .title-underlined {
-  border-bottom: 1px solid #d81b60;
+  border-bottom: 2px solid #d81b60;
+  padding-bottom: 5px;
   width: 50%; }
 
 .locomotoraProject .project-header {
@@ -294,6 +368,19 @@ header {
 .unityProject .project-img {
   max-width: 950px; }
 
+.jsProject .project-header {
+  background-color: #F7E018; }
+  .jsProject .project-header h1, .jsProject .project-header p {
+    color: #333; }
+  .jsProject .project-header img {
+    width: 20%; }
+
+.jsProject .skills-wrapper {
+  border-bottom: 2px solid #F7E018; }
+
+.jsProject .project-img {
+  max-width: 950px; }
+
 nav {
   height: 50px;
   display: flex;
@@ -323,11 +410,11 @@ nav {
     border-color: #39bda7; }
 
 .project-intro-wrapper {
-  margin-top: 30px;
+  margin-top: 130px;
   margin-bottom: 30px;
-  padding: 20px;
-  justify-content: space-evenly;
-  flex-wrap: wrap; }
+  padding: 20px; }
+  .project-intro-wrapper .project-intro {
+    margin-left: 150px; }
 
 .image-wrapper, .gif-wrapper {
   position: relative;
@@ -343,11 +430,6 @@ nav {
   max-width: 1300px;
   align-items: center;
   border: 0; }
-
-.static {
-  position: absolute; }
-  .static:hover {
-    opacity: 0; }
 
 .worka-gif {
   width: 350px;
@@ -388,22 +470,6 @@ iframe {
 .mobile-back {
   display: none; }
 
-@media (max-width: 768px) {
-  .mobile-back {
-    display: flex; }
-  .project-img {
-    max-width: 300px; }
-  .locomotoraProject .project-intro {
-    flex-wrap: wrap; }
-  .adobeProject .project-card {
-    margin: 0; }
-  .adobeProject .content-main {
-    flex-wrap: wrap;
-    justify-content: center; }
-  .samrioProject .content-wrapper > div {
-    flex-wrap: wrap;
-    justify-content: center; } }
-
 .glitch {
   position: relative;
   width: 400px;
@@ -411,47 +477,47 @@ iframe {
 
 @keyframes noise-anim {
   0% {
-    clip: rect(49px, 9999px, 30px, 0); }
+    clip: rect(48px, 9999px, 36px, 0); }
   5% {
-    clip: rect(56px, 9999px, 6px, 0); }
+    clip: rect(34px, 9999px, 55px, 0); }
   10% {
-    clip: rect(14px, 9999px, 47px, 0); }
+    clip: rect(89px, 9999px, 82px, 0); }
   15% {
-    clip: rect(5px, 9999px, 91px, 0); }
+    clip: rect(36px, 9999px, 77px, 0); }
   20% {
-    clip: rect(80px, 9999px, 46px, 0); }
+    clip: rect(99px, 9999px, 98px, 0); }
   25% {
-    clip: rect(71px, 9999px, 22px, 0); }
+    clip: rect(25px, 9999px, 67px, 0); }
   30% {
-    clip: rect(27px, 9999px, 52px, 0); }
+    clip: rect(2px, 9999px, 84px, 0); }
   35% {
-    clip: rect(90px, 9999px, 42px, 0); }
+    clip: rect(60px, 9999px, 71px, 0); }
   40% {
-    clip: rect(44px, 9999px, 51px, 0); }
+    clip: rect(27px, 9999px, 16px, 0); }
   45% {
-    clip: rect(90px, 9999px, 94px, 0); }
+    clip: rect(57px, 9999px, 57px, 0); }
   50% {
-    clip: rect(58px, 9999px, 18px, 0); }
+    clip: rect(16px, 9999px, 92px, 0); }
   55% {
-    clip: rect(90px, 9999px, 12px, 0); }
+    clip: rect(5px, 9999px, 20px, 0); }
   60% {
-    clip: rect(39px, 9999px, 34px, 0); }
+    clip: rect(10px, 9999px, 85px, 0); }
   65% {
-    clip: rect(100px, 9999px, 77px, 0); }
+    clip: rect(76px, 9999px, 75px, 0); }
   70% {
-    clip: rect(6px, 9999px, 36px, 0); }
+    clip: rect(68px, 9999px, 42px, 0); }
   75% {
-    clip: rect(98px, 9999px, 62px, 0); }
+    clip: rect(6px, 9999px, 89px, 0); }
   80% {
-    clip: rect(42px, 9999px, 23px, 0); }
+    clip: rect(68px, 9999px, 37px, 0); }
   85% {
-    clip: rect(92px, 9999px, 77px, 0); }
+    clip: rect(25px, 9999px, 33px, 0); }
   90% {
-    clip: rect(21px, 9999px, 72px, 0); }
+    clip: rect(24px, 9999px, 5px, 0); }
   95% {
-    clip: rect(77px, 9999px, 9px, 0); }
+    clip: rect(56px, 9999px, 37px, 0); }
   100% {
-    clip: rect(51px, 9999px, 88px, 0); } }
+    clip: rect(96px, 9999px, 30px, 0); } }
 
 .glitch:after {
   content: attr(data-text);
@@ -467,47 +533,47 @@ iframe {
 
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(62px, 9999px, 39px, 0); }
+    clip: rect(96px, 9999px, 89px, 0); }
   5% {
-    clip: rect(23px, 9999px, 7px, 0); }
+    clip: rect(23px, 9999px, 88px, 0); }
   10% {
-    clip: rect(38px, 9999px, 22px, 0); }
+    clip: rect(89px, 9999px, 38px, 0); }
   15% {
-    clip: rect(71px, 9999px, 65px, 0); }
+    clip: rect(51px, 9999px, 12px, 0); }
   20% {
-    clip: rect(6px, 9999px, 84px, 0); }
+    clip: rect(83px, 9999px, 23px, 0); }
   25% {
-    clip: rect(64px, 9999px, 62px, 0); }
+    clip: rect(25px, 9999px, 69px, 0); }
   30% {
-    clip: rect(41px, 9999px, 20px, 0); }
+    clip: rect(41px, 9999px, 32px, 0); }
   35% {
-    clip: rect(61px, 9999px, 57px, 0); }
+    clip: rect(49px, 9999px, 87px, 0); }
   40% {
-    clip: rect(74px, 9999px, 9px, 0); }
+    clip: rect(95px, 9999px, 35px, 0); }
   45% {
-    clip: rect(84px, 9999px, 61px, 0); }
+    clip: rect(99px, 9999px, 28px, 0); }
   50% {
-    clip: rect(38px, 9999px, 53px, 0); }
+    clip: rect(63px, 9999px, 71px, 0); }
   55% {
-    clip: rect(37px, 9999px, 97px, 0); }
+    clip: rect(75px, 9999px, 28px, 0); }
   60% {
-    clip: rect(6px, 9999px, 78px, 0); }
+    clip: rect(96px, 9999px, 45px, 0); }
   65% {
-    clip: rect(79px, 9999px, 34px, 0); }
+    clip: rect(45px, 9999px, 95px, 0); }
   70% {
-    clip: rect(48px, 9999px, 62px, 0); }
+    clip: rect(65px, 9999px, 22px, 0); }
   75% {
-    clip: rect(14px, 9999px, 16px, 0); }
+    clip: rect(2px, 9999px, 72px, 0); }
   80% {
-    clip: rect(97px, 9999px, 54px, 0); }
+    clip: rect(19px, 9999px, 97px, 0); }
   85% {
-    clip: rect(88px, 9999px, 92px, 0); }
+    clip: rect(53px, 9999px, 66px, 0); }
   90% {
-    clip: rect(82px, 9999px, 79px, 0); }
+    clip: rect(86px, 9999px, 79px, 0); }
   95% {
-    clip: rect(33px, 9999px, 46px, 0); }
+    clip: rect(9px, 9999px, 49px, 0); }
   100% {
-    clip: rect(9px, 9999px, 58px, 0); } }
+    clip: rect(26px, 9999px, 40px, 0); } }
 
 .glitch:before {
   content: attr(data-text);
@@ -592,13 +658,13 @@ iframe {
 
 .adobe:hover {
   transition: all 0.5s 0.1s ease-in-out;
-  background: url("../img/pokemonWeb.png");
+  background: url("../img/adobe/pokemonWeb.png");
   background-size: cover;
   transform: none; }
 
 .worka:hover {
   transition: all 0.5s 0.1s ease-in-out;
-  background: url("../img/dolzStatic.png");
+  background: url("../img/worka/dolzStatic.png");
   background-size: cover;
   transform: none; }
 
@@ -610,27 +676,49 @@ iframe {
 
 .locomotora:hover {
   transition: all 0.5s 0.1s ease-in-out;
-  background: url("../img/locomotoraStyle.jpg");
+  background: url("../img/locomotora/locomotoraStyle.jpg");
   background-size: cover;
   transform: none; }
 
 .samrio:hover {
   transition: all 0.5s 0.1s ease-in-out;
-  background: url("../img/helloKityScreens.jpg");
+  background: url("../img/sanrio/helloKityScreens.jpg");
   background-size: cover;
   transform: none; }
 
 .aren:hover {
   transition: all 0.5s 0.1s ease-in-out;
-  background: url("../img/aren.png");
+  background: url("../img/aren/aren.png");
   background-size: cover;
   transform: none; }
 
 .unity:hover {
   transition: all 0.5s 0.1s ease-in-out;
-  background: url("../img/unity.gif");
+  background: url("../img/unity/unity.gif");
   background-size: cover;
   transform: none; }
+
+.js:hover {
+  transition: all 0.5s 0.1s ease-in-out;
+  background: url("../img/jsChallenge/drumkit.png");
+  background-size: cover;
+  transform: none; }
+
+@media (max-width: 768px) {
+  .mobile-back {
+    display: flex; }
+  .project-img {
+    max-width: 300px; }
+  .locomotoraProject .project-intro {
+    flex-wrap: wrap; }
+  .adobeProject .project-card {
+    margin: 0; }
+  .adobeProject .content-main {
+    flex-wrap: wrap;
+    justify-content: center; }
+  .samrioProject .content-wrapper > div {
+    flex-wrap: wrap;
+    justify-content: center; } }
 
 @media (max-width: 768px) {
   css-doodle, canvas, .intro--wrapper {
@@ -641,17 +729,27 @@ iframe {
     font-size: 30px; }
   .intro--text {
     font-size: 24px; }
+  .project-intro-wrapper {
+    margin-top: 10px; }
+    .project-intro-wrapper .skills-wrapper {
+      display: none; }
+    .project-intro-wrapper .project-intro {
+      margin-left: 0; }
+      .project-intro-wrapper .project-intro h2 {
+        font-size: 30px; }
   .filter--wrapper {
     margin-top: 0; }
   .filter--text {
     font-size: 20px; }
-  .project-header {
-    margin-top: 0; }
   .header-text {
     font-size: 14px;
     text-align: end; }
   .btn--back img {
-    display: none; } }
+    display: none; }
+  .unityProject .project-header img {
+    width: 50%; }
+  .jsProject .project-header img {
+    width: 40%; } }
 
 @media (min-width: 769px) and (max-width: 1440px) {
   .intro--h1 {
