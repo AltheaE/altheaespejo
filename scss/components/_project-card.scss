@@ -1,14 +1,14 @@
-
-.adobe{
-    &:hover{
+.adobe {
+    &:hover {
         transition: $slide;
-  background: url("../img/adobe/pokemonWeb.png");
- background-size: cover;
- /* transform: none; */
+        background: url("../img/adobe/pokemonWeb.png");
+        background-size: cover;
+        /* transform: none; */
     }
 }
-.worka{
-    &:hover{
+
+.worka {
+    &:hover {
         transition: $slide;
         background: url("../img/worka/dolzStatic.png");
         background-size: cover;
@@ -16,8 +16,8 @@
     }
 }
 
-.entryscape{
-    &:hover{
+.entryscape {
+    &:hover {
         transition: $slide;
         background: url("../img/locked.png");
         background-size: cover;
@@ -25,8 +25,8 @@
     }
 }
 
-.locomotora{
-    &:hover{
+.locomotora {
+    &:hover {
         transition: $slide;
         background: url("../img/locomotora/locomotoraStyle.jpg");
         background-size: cover;
@@ -34,8 +34,8 @@
     }
 }
 
-.samrio{
-    &:hover{
+.samrio {
+    &:hover {
         transition: $slide;
         background: url("../img/sanrio/helloKityScreens.jpg");
         background-size: cover;
@@ -43,8 +43,8 @@
     }
 }
 
-.aren{
-    &:hover{
+.aren {
+    &:hover {
         transition: $slide;
         background: url("../img/aren/aren.png");
         background-size: cover;
@@ -52,21 +52,29 @@
     }
 }
 
-.unity{
-    &:hover{
+.unity {
+    &:hover {
         transition: $slide;
         background: url("../img/unity/unity.gif");
         background-size: cover;
         /* transform: none; */
     }
 }
- 
-.js{
-    &:hover{
+
+.js {
+    &:hover {
         transition: $slide;
         background: url("../img/jsChallenge/drumkit.png");
         background-size: cover;
         /* transform: none; */
     }
 }
- 
+
+.th {
+    &:hover {
+        transition: $slide;
+        background: url("../img/thorns/clear.jpg");
+        background-size: cover;
+        /* transform: none; */
+    }
+}
