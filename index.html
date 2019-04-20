@@ -3,14 +3,17 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136307763-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136307763-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-136307763-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-136307763-1');
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +36,7 @@
             var slider = new gooSlider('body');
             var l1, l2;
             $('body').click(function () {
-                var c = 'hsla(' + (Math.floor(Math.random() * 7) * 20) + ',82%,68%,1)';
+                var c = 'hsla(' + (Math.floor(Math.random() * 7) * 20) + ',82%,78%,1)';
                 if (c != l1 && c != l2) {
                     slider.wave(c, function () {});
                     l2 = l1;
@@ -42,12 +45,11 @@
                     $('body').click();
                 }
             });
-
             var count = 5,
                 cur = 0;
 
             function start() {
-                slider.wave('hsla(151, 95%, 65%, 1)', function () {});
+                slider.wave('hsla(151, 95%, 75%, 1)', function () {});
                 cur++;
                 if (cur < count) {
                     setTimeout(function () {
@@ -58,13 +60,12 @@
             start();
         });
     </script>
+
     <div class="intro--wrapper">
         <div>
             <h1 class="intro--h1">Althea Espejo</h1>
             <h2 class="intro--h2">UI developer & illustrator 🦄</h2>
         </div>
-
-        <p class="intro--text"> Say hi at 📧 <a href="mailto:"> <span>althea</span><span>.</span><span>espejo</span><span>@</span><span>gmail</span><span>.com</span></p></a>
     </div>
 
 
@@ -80,11 +81,7 @@
             <button class="btn btn--stripe" data-rel="misc">Misc</button>
         </div>
     </div>
-
-
-    <!--     <div style="clear:both;"></div>
- -->
-    <div id="portfolio" class="grid">
+    <!-- <div id="portfolio" class="grid">
 
         <a href="projects/adobe.html" class="item uiWeb item--medium all adobe">
 
@@ -130,7 +127,7 @@
                 Javascript challenge
             </div>
         </a>
-        <a  href="projects/thorns.html" class="item item--medium gDesign illust misc all th">
+        <a href="projects/thorns.html" class="item item--medium gDesign illust misc all th">
             <div class="item__details  gDesign illust misc all">
                 Thorns & Horns. Toys & illustration
             </div>
@@ -142,7 +139,7 @@
         </a>
         <a class="item illust all">
             <div class="item__details illust all">
-                Editorial illustration
+                ALCE Editorial illustration
             </div>
         </a>
         <a class="item coding uiWeb all">
@@ -175,8 +172,54 @@
 
 
 
-    </div>
+    
+    
+    </div> -->
+    <div id="portfolio" class="project__wrapper">
+        <div class="project__card adobe all uiWeb">
+            <div class="project__card--img">
+                <img src="img/adobe/mobile2.png" alt="">
+            </div>
+            <div class="project__card--description">
+                <h5 class="text--note">Much prototype</h5>
+                <h3>Adobe xD Challenge</h3>
+                <p>Experiments on animation, prototyping and a lot of screens and wireframes</p>
+                <a href="projects/adobe.html"><button class="btn btn--stripe">View Project</button></a>
+            </div>
+        </div>
+        <div class="project__card all --left illust">
+            <div class="project__card--description">
+                <h5 class="text--note">Artsy</h5>
+                <h3>Worka</h3>
+                <p>Design and front end development of responsive portfolio templates</p>
+                <a href="projects/worka.html"><button class="btn btn--stripe">View Project</button></a>
+            </div>
+            <div class="project__card--img">
+            </div>
+        </div>
+        <div class="project__card all ">
+            <div class="project__card--description">
+                <h5 class="text--note">Kawaii Prototype</h5>
+                <h3>Sanrio</h3>
+                <p>What would happen if you mix Sanrio world and the mechanics of Pokemon Go?</p>
+                <a href="projects/sanrio.html"><button class="btn btn--stripe">View Project</button></a>
+            </div>
+            <div class="project__card--img">
+                <img src="img/sanrio/mobile1.png" alt="">
+            </div>
+        </div>
+        <div class="project__card all --left">
+            <div class="project__card--description">
+                <h5 class="text--note">Reinventing the wheel</h5>
+                <h3>La Locomotora</h3>
+                <p>Design and implementation of website. Cool animations.</p>
+                <a href="projects/locomotora.html"><button class="btn btn--stripe">View Project</button></a>
+            </div>
+            <div class="project__card--img"></div>
+        </div>
 
+
+    </div>
 </body>
 
 </html>

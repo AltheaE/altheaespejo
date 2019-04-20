@@ -3,14 +3,17 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136307763-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136307763-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-136307763-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-136307763-1');
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,108 +26,89 @@
     <header>
         <div class="flex-sb">
             <h4 class="header-title"> <a href="../index.html"> Althea Espejo</a></h4>
-            <button class="btn--back" onclick="window.history.back()"><img class src="../img/arrow-back.png" alt="arrow back"></button>
+            <button class="btn--back" onclick="window.history.back()"><img class src="../img/arrow-back.png"
+                    alt="arrow back"></button>
         </div>
-        <p class="header-text"> Say hi at 📧 <a href="mailto:"> <span>althea</span><span>.</span><span>espejo</span><span>@</span><span>gmail</span><span>.com</span></p></a>
+        <p class="header-text"> Say hi at 📧 <a href="mailto:">
+                <span>althea</span><span>.</span><span>espejo</span><span>@</span><span>gmail</span><span>.com</span>
+        </p></a>
     </header>
-      <section class=" flex project-header ">
-        <div>
-            <a href="https://www.adobe.com/se/products/xd.html" target="blank">
-                <img src="../img/adobe/xDLogo.png" alt="xD logo"></a>
-        </div>
-        <div>
-            <h1>Adobe xD Challenge</h1>
-            <p>Design and prototype web and mobile apps</p>
-        </div>
+    <main class="main-wrapper">
+        <section class=" project-intro-wrapper flex">
+             <div class="project-intro">
 
-    </section> 
-    <section class=" project-intro-wrapper flex">
-        <div class="flex skills-wrapper">
-            <div>
-                <h3>Role</h3>
+                <h2 class="reveal-text"><a href="https://www.adobe.com/se/products/xd.html" target="blank">Adobe xD
+                        Challenge</a></h2>
+                <p>Adobe xD is a UI/UX design and prototyping tool.</p>
+                <p>From time to time Adobe's team create a series of challenges so </p>
+                <p>the community can improve their
+                    skills designing and prototyping apps and websites</p>
+                <p class="accent-text">If an image has this icon <img class="icon-inline" src="../img/cursor.svg"
+                        alt="">
+                    it means is
+                    clickable! and will lead to a interactive prototype</p>
+                <div class="skills-inline-wrapper">
+                <h3 class="title-underlined">Role</h3>
                 <ul>
                     <li>Visual Designer</li>
                     <li>UI designer</li>
                 </ul>
             </div>
-            <div>
-                <h3>Responsabilities</h3>
-                <ul>
-                    <li>Research and Design</li>
-                    <li>Prototyping</li>
-                </ul>
-            </div>
-            <div>
-                <h3 class="skills">Skills | Tech stack</h3>
-                <ul>
-                    <li>Adobe xD</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe Illustrator</li>
-                </ul>
-            </div>
-        </div>
 
 
-
-
-        <div class="project-intro">
-
-            <h2 class="reveal-text"><a href="https://www.adobe.com/se/products/xd.html" target="blank">Adobe xD
-                    Challenge</a></h2>
-            <p>Adobe xD is a UI/UX design and prototyping tool.</p>
-            <p>From time to time Adobe's team create a series of challenges so </p>
-            <p>the community can improve their
-                skills designing and prototyping apps and websites</p>
-            <p class="accent-text">If an image has this icon <img class="icon-inline" src="../img/cursor.svg" alt="">
-                it means is
-                clickable! and will lead to a interactive prototype</p>
-
-        </div>
-
-
-
-    </section>
-    <section class="project-content-wrapper">
-        <div class="content-wrapper">
-            <div class="project-card flex">
-                <div class="content-intro">
-                    <h3 class=" title-underlined">Challenge</h3>
-                    <p>Design a web page for an event. Display the date, location, content and a clear call to action
-                        to register.</p>
-                </div>
-                <div class="content-main flex">
-                    <div class="project-img"> <a href="https://xd.adobe.com/view/9aef9949-1444-4cbb-583b-d5c8712dd930-ecde/"
-                            target="blank"> <img src="../img/adobe/pokemonWebInt.png" alt="pokemon event web"></a></div>
-                    <div class="project-img"><img src="../img/adobe/pokemon.gif" alt="pokemon web interaction gif"></div>
-                </div>
             </div>
 
-            <div class="project-card flex">
-                <div class="content-intro">
-                    <h3 class=" title-underlined">Challenge</h3>
-                    <p>Design and prototype a “pull to refresh” experience for a photo sharing app.</p>
-                </div>
-                <div class="project-img single flex"><img src="../img/adobe/photoReload_userFlow.png" alt="photo reload user flow"></div>
 
-                <div class="content-main flex">
-                    <div class="project-img"> <img src="../img/adobe/mockup-iphone-thin.png " alt="photo reload mockup"></div>
-                    <div class="project-img"><img src="../img/adobe/photoReload.gif" alt="photo reload gif"></div>
+
+        </section>
+        <section class="project-content-wrapper">
+            <div class="content-wrapper">
+                <div class="project-card flex">
+                    <div class="content-intro">
+                        <h3 class=" title-underlined">Book an event</h3>
+                        <p>Design a web page for an event. Display the date, location, content and a clear call to
+                            action
+                            to register.</p>
+                    </div>
+                    <div class="content-main flex">
+                        <div class="project-img"> <a
+                                href="https://xd.adobe.com/view/9aef9949-1444-4cbb-583b-d5c8712dd930-ecde/"
+                                target="blank"> <img src="../img/adobe/pokemonWebInt.png" alt="pokemon event web"></a>
+                        </div>
+                        <div class="project-img"><img src="../img/adobe/pokemon.gif" alt="pokemon web interaction gif">
+                        </div>
+                    </div>
                 </div>
+
+                <div class="project-card flex">
+                    <div class="content-intro">
+                        <h3 class=" title-underlined">Pull to refresh</h3>
+                        <p>Design and prototype a “pull to refresh” experience for a photo sharing app.</p>
+                    </div>
+                    <div class="project-img single flex"><img src="../img/adobe/photoReload_userFlow.png"
+                            alt="photo reload user flow"></div>
+
+                    <div class="content-main flex">
+                        <div class="project-img"> <img src="../img/adobe/mockup-iphone-thin.png "
+                                alt="photo reload mockup"></div>
+                        <div class="project-img"><img src="../img/adobe/photoReload.gif" alt="photo reload gif"></div>
+                    </div>
+                </div>
+                <div class="project-card flex">
+                    <div class="content-intro">
+                        <h3 class=" title-underlined">Photo App</h3>
+                        <p>Design and prototype a mobile app experience to browse your photo albums.</p>
+                    </div>
+                    <div class="content-main flex">
+                        <div class="project-img"><img src="../img/adobe/photoAlbum.png " alt="photo album"></div>
+                        <div class="project-img"><img src="../img/adobe/photoAlbum.gif" alt="photo album gif"></div>
+                    </div>
+                </div>
+
             </div>
-            <div class="project-card flex">
-                <div class="content-intro">
-                    <h3 class=" title-underlined">Challenge</h3>
-                    <p>Design and prototype a mobile app experience to browse your photo albums.</p>
-                </div>
-                <div class="content-main flex">
-                    <div class="project-img"><img src="../img/adobe/photoAlbum.png " alt="photo album"></div>
-                    <div class="project-img"><img src="../img/adobe/photoAlbum.gif" alt="photo album gif"></div>
-                </div>
-            </div>
 
-        </div>
-
-    </section>
+        </section>
+    </main>
 
 </body>
 

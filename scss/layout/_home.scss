@@ -19,13 +19,82 @@
     padding: 20px;
     z-index: 2;
     position: relative;
+    justify-content: center;
 }
 .filter--wrapper{
     display: block;
     margin-top:100px;
 }
+.project__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(140,176,179);
+background: linear-gradient(356deg, rgba(140,176,179,1) 0%, rgba(239,239,239,1) 47%, rgba(255,255,255,0.9730624671743697) 84%);
+}
+.project__card{
+    background:#7bd0d0;
+    width: 950px;
+    height: 350px;
+    padding: 10px;
+    margin:40px 20px;
+    position: relative;
+    border-radius: 5px;
+    &:nth-of-type(2n) {
+        background-color: #caffa5;
+      }
+      &:nth-of-type(3n) {
+        background-color: #ffacba;
+      }
+    &--img{
+        max-width: 300px;
+    }
+    &--description{
+        background: white;
+        box-shadow: 2px 2px 6px 0px rgba(#424B54, 0.3);
+        z-index: 2;
+        width: 350px;
+        height: 350px;
+        border-radius: 5px;
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: 30px;
+        margin-top:-30px;
+        padding: 40px;
+        p{
+            line-height: 1.5;
+        }
+   
+   .btn{
+            margin-top: 30px;
+            font-size: 16px;
+            padding: 20px 30px;
+            text-transform: capitalize;
+            margin-top: 30px;
+            a:hover{
+                color:white;
+            }
+        } 
+    }
+}
+.project__card.--left{
+    .project__card--description{
+        left:0;
+        margin-left:30px;
+        
+    }
+}
 
+.adobe{
+    .project__card--img{
+        max-width: 180px;
+    margin-top: -35px;
+    margin-left: 30px;
 
+    }
+}
 
   canvas {
 	z-index: 1;
@@ -33,7 +102,7 @@
 	top: 0px;
 	left: 0px;
 	width: 100%;
-    height: 500px
+    height: 500px;
 }
 css-doodle{
     position: absolute;

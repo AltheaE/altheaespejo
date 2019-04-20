@@ -1,80 +1,46 @@
 .adobe {
-    &:hover {
-        transition: $slide;
-        background: url("../img/adobe/pokemonWeb.png");
-        background-size: cover;
-        /* transform: none; */
-    }
+    background: url("../img/adobe/pokemonWeb.png");
+    background-size: cover;
 }
 
 .worka {
-    &:hover {
-        transition: $slide;
-        background: url("../img/worka/dolzStatic.png");
-        background-size: cover;
-        /* transform: none; */
-    }
+    background: url("../img/worka/dolzStatic.png");
+    background-size: cover;
 }
 
-.entryscape {
-    &:hover {
-        transition: $slide;
-        background: url("../img/locked.png");
-        background-size: cover;
-        /* transform: none; */
-    }
+.entryscape {  
+    background: url("../img/locked.png");
+    background-size: cover;
 }
 
 .locomotora {
-    &:hover {
-        transition: $slide;
-        background: url("../img/locomotora/locomotoraStyle.png");
-        background-size: cover;
-        /* transform: none; */
-    }
+    background: url("../img/locomotora/locomotoraStyle.png");
+    background-size: cover;
 }
 
-.samrio {
-    &:hover {
-        transition: $slide;
-        background: url("../img/sanrio/helloKityScreens.png");
-        background-size: cover;
-        /* transform: none; */
-    }
+.sanrio {
+    background: url("../img/sanrio/helloKityScreens.png");
+    background-size: cover;
+
 }
 
 .aren {
-    &:hover {
-        transition: $slide;
-        background: url("../img/aren/aren.png");
-        background-size: cover;
-        /* transform: none; */
-    }
+    background: url("../img/aren/aren.png");
+    background-size: cover;
 }
 
 .unity {
-    &:hover {
-        transition: $slide;
-        background: url("../img/unity/unity.gif");
-        background-size: cover;
-        /* transform: none; */
-    }
+    background: url("../img/unity/unity.gif");
+    background-size: cover;
 }
 
 .js {
-    &:hover {
-        transition: $slide;
-        background: url("../img/jsChallenge/drumkit.png");
-        background-size: cover;
-        /* transform: none; */
-    }
+    background: url("../img/jsChallenge/drumkit.png");
+    background-size: cover;
+
 }
 
-.th {
-    &:hover {
-        transition: $slide;
-        background: url("../img/thorns/clear.jpg");
-        background-size: cover;
-        /* transform: none; */
-    }
+.th { 
+    background: url("../img/thorns/clear.jpg");
+    background-size: cover;
 }

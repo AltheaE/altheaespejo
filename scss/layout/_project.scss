@@ -17,49 +17,33 @@ header {
     }
 }
 
-.skills-wrapper {
-    max-height: 500px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.skills-inline-wrapper {
     margin-top: 10px;
-    border-bottom: 2px solid $black-05;
 }
 
-.workaProject {
-    .project-header {
-        background-color: $worka;
+.workaProject{
+    .project-intro-wrapper>.flex{
+        justify-content: center;
     }
-
-    .skills-wrapper {
-        max-height: 500px;
-        border-bottom: 2px solid $worka;
+    .project-intro{
+        max-width: 50%;
+        margin-right: 40px;
     }
-}
-
-
-.adobeProject {
-    .project-header {
-        background-color: $xD;
+    .project-img{
+        max-width: 450px;
     }
-
-    .skills-wrapper {
-        border-bottom: 2px solid $xD;
+    .project-content-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3{
+            text-align: center;
+        }
     }
-
-    .title-underlined {
-        border-bottom: 2px solid $xD;
-        padding-bottom: 5px;
-        width: 50%;
-    }
-
-
 }
 
 .locomotoraProject {
-    .project-header {
-        background-color: $locomotora;
-    }
+
 
     .skills-wrapper {
         border-bottom: 2px solid $locomotora;
@@ -75,15 +59,19 @@ header {
     }
 }
 
-.samrioProject {
-    .project-header {
-        background: linear-gradient(to right, rgba(241, 153, 166, 1) 0%, rgba(241, 153, 166, 1) 12%, rgba(228, 39, 43, 1) 88%, rgba(228, 39, 43, 1) 100%);
+.sanrioProject {
+    .project-intro-wrapper>.flex{
+        justify-content: center;
+        img{
+            max-width: 400px;
+        }
+    }
+    .project-intro{
+        max-width: 50%;
+        margin-right: 40px;
     }
 
-    .skills-wrapper {
-        border-bottom: 2px solid rgba(241, 153, 166, 1);
-    }
-
+    
     .content-wrapper {
         display: flex;
         flex-direction: column;
@@ -158,7 +146,7 @@ header {
         background-color: $green;
 
         img {
-           width: 80%; 
+            width: 80%;
         }
     }
 
@@ -193,28 +181,18 @@ nav {
     width: 50%;
 }
 
-.sidebar-role {
-    max-height: 550px;
-    padding: 20px;
-    text-align: left;
-    background: #fff;
-    border-bottom: 4px solid #ccc;
-    border-radius: 6px;
-    transition: all .5s;
 
-    &:hover {
-        border-color: #39bda7;
-    }
+
+.main-wrapper {
+    background: rgb(140, 176, 179);
+    background: linear-gradient(356deg, rgba(140, 176, 179, 1) 0%, rgba(239, 239, 239, 1) 75%, rgba(255, 255, 255, 0.9730624671743697) 96%);
 }
 
 .project-intro-wrapper {
-    margin-top: 130px;
+    margin-top: 80px;
     margin-bottom: 30px;
     padding: 20px;
-
-    .project-intro {
-        margin-left: 150px;
-    }
+    justify-content: center;
 }
 
 .image-wrapper,
@@ -256,7 +234,6 @@ nav {
 .project-content-wrapper {
     display: flex;
     justify-content: center;
-    background-color: $lightgrey;
 }
 
 footer {

@@ -35,6 +35,7 @@ a:hover{
 
 }
 .filter--text{
+  text-align: center;
   font-size: 40px;
 }
 h1,h2,h3,p{
@@ -116,17 +117,7 @@ li{
 	--duration: 800ms;
 	--iterations: 1;
 }
-/* ••·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
 
-
-.reveal-text,
-.reveal-text::after {
-	animation-delay: var(--animation-delay, 4s);
-	animation-iteration-count: var(--iterations, 1);
-	animation-duration: var(--duration, 800ms);
-	animation-fill-mode: both;
-	animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
-}
 
 .reveal-text {
 	position: relative;
@@ -144,7 +135,7 @@ li{
 		right: 0;
 		bottom: 0;
     transform: scaleX(0);
-    background-color:$xD;
+    background-color:yellow;
 		transform-origin: 0 50%;
 		pointer-events: none;
 		animation-name: text-revealer;
@@ -152,33 +143,49 @@ li{
 	
 }
 
+.adobeProject, .sanrioProject{
+  .reveal-text::after{
+    background-color:$xD;
+  }
+}
 
-@keyframes clip-text {
-	from {
-		clip-path: inset(0 100% 0 0);
-	}
-	to {
-		clip-path: inset(0 0 0 0);
-	}
+.workaProject{
+  .reveal-text::after{
+    background-color:$worka;
+  }
+}
+
+.locomotoraProject{
+  .reveal-text::after{
+    background-color:$locomotora;
+  }
 }
 
 
-@keyframes text-revealer {
-	
-	0%, 50% {
-		transform-origin: 0 50%;
-	}
-	
-	60%, 100% {
-		transform-origin: 100% 50%;		
-	}
 
-	
-	60% {
-		transform: scaleX(1);
-	}
-	
-	100% {
-		transform: scaleX(0);
-	}
+
+.title-underlined {
+  border-bottom: 2px solid $worka;
+  padding-bottom: 5px;
+  width: 50%;
+}
+
+.workaProject {
+  .title-underlined {
+      border-bottom: 2px solid $worka;
+  }
+
+}
+
+
+.adobeProject {
+  .title-underlined {
+      border-bottom: 2px solid $xD;
+  }
+}
+
+.sanrioProject {
+  .title-underlined {
+      border-bottom: 2px solid $xD;
+  }
 }

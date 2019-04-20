@@ -1,6 +1,3 @@
-
-
-
 window.requestFrame = (function(){
 	return  window.requestAnimationFrame       ||
 		window.webkitRequestAnimationFrame ||
@@ -117,4 +114,3 @@ var gooSlider = function(parent, id){
 	}
 	loop(); // start the animation
 }
-
