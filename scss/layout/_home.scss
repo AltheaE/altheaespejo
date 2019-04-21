@@ -24,14 +24,16 @@
 .filter--wrapper{
     display: block;
     margin-top:100px;
+    background:$lightgrey;
+
 }
 .project__wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgb(140,176,179);
-background: linear-gradient(356deg, rgba(140,176,179,1) 0%, rgba(239,239,239,1) 47%, rgba(255,255,255,0.9730624671743697) 84%);
-}
+    background:$lightgrey;
+/* background: linear-gradient(356deg, rgba(140,176,179,1) 0%, rgba(239,239,239,1) 47%, rgba(255,255,255,0.9730624671743697) 84%);
+ */}
 .project__card{
     background:#7bd0d0;
     width: 950px;
@@ -103,6 +105,7 @@ background: linear-gradient(356deg, rgba(140,176,179,1) 0%, rgba(239,239,239,1) 
 	left: 0px;
 	width: 100%;
     height: 500px;
+
 }
 css-doodle{
     position: absolute;

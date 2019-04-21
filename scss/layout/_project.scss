@@ -21,6 +21,13 @@ header {
     margin-top: 10px;
 }
 
+.project-intro{
+    max-width: 50%;
+    margin-right: 40px;
+}
+.project-intro-wrapper>.flex{
+    justify-content: center;
+}
 .workaProject{
     .project-intro-wrapper>.flex{
         justify-content: center;
@@ -184,15 +191,17 @@ nav {
 
 
 .main-wrapper {
-    background: rgb(140, 176, 179);
-    background: linear-gradient(356deg, rgba(140, 176, 179, 1) 0%, rgba(239, 239, 239, 1) 75%, rgba(255, 255, 255, 0.9730624671743697) 96%);
-}
+    background: $lightgrey;
+/*     background: linear-gradient(356deg, rgba(140, 176, 179, 1) 0%, rgba(239, 239, 239, 1) 75%, rgba(255, 255, 255, 0.9730624671743697) 96%);
+ */}
 
 .project-intro-wrapper {
-    margin-top: 80px;
     margin-bottom: 30px;
     padding: 20px;
     justify-content: center;
+    .project-intro{
+        margin-top: 80px;
+    }
 }
 
 .image-wrapper,
