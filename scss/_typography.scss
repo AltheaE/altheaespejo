@@ -165,7 +165,7 @@ li{
 
 
 .title-underlined {
-  border-bottom: 2px solid $worka;
+  border-bottom: 2px solid $blue;
   padding-bottom: 5px;
   width: 50%;
 }
@@ -187,5 +187,11 @@ li{
 .sanrioProject {
   .title-underlined {
       border-bottom: 2px solid $xD;
+  }
+}
+
+.locomotoraProject {
+  .title-underlined {
+      border-bottom: 2px solid $locomotora;
   }
 }
