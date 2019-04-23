@@ -97,28 +97,13 @@ header {
         }
     }
 
-    .skills-wrapper {
-        border-bottom: 2px solid $aren;
-    }
-
     iframe {
         margin: 0;
     }
 }
 
 .unityProject {
-    .project-header {
-        background-color: $green;
-
-        img {
-            width: 20%;
-        }
-    }
-
-    .skills-wrapper {
-        border-bottom: 2px solid $green;
-    }
-
+    
     .project-img {
         max-width: 950px;
     }
@@ -130,30 +115,24 @@ header {
         max-width: 100%;
     }
 
-    .skills-wrapper {
-        border-bottom: 2px solid $js;
-    }
-
     .project-img {
         max-width: 950px;
     }
 }
 
 .thProject {
-    .project-header {
-        background-color: $green;
-
-        img {
-            width: 80%;
-        }
-    }
-
-    .skills-wrapper {
-        border-bottom: 2px solid $green;
-    }
 
     .project-img {
         max-width: 950px;
+    }
+}
+
+.alceProject{
+    .image-wrapper{
+        flex-direction: column;
+        .project-img{
+            max-width: 750px;
+        }
     }
 }
 

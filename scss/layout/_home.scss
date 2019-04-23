@@ -42,21 +42,8 @@
     margin:40px 20px;
     position: relative;
     border-radius: 5px;
-    &:nth-of-type(2n) {
-        background-color: $worka;
-      }
-      &:nth-of-type(3n) {
-        background-color: $sanrio;
-      }
-      &:nth-of-type(4n) {
-        background-color: $locomotora;
-      }
-      &:nth-of-type(5n) {
-        background-color: $js;
-      }
-      &:nth-of-type(6n) {
-        background-color: $blue;
-      }
+    background-color:$blue;
+ 
     &--img{
         max-width: 300px;
     }
@@ -100,6 +87,7 @@
 }
 
 .adobe{
+    background-color:$xD;
     .project__card--img{
         max-width: 180px;
     margin-top: -35px;
@@ -107,7 +95,30 @@
 
     }
 }
+.alce{
+    background-color:$blue;
+    .project__card--img {
+        max-width: 250px;
+        margin-top: -41px;
+        margin-right: -10px;
+    }
+}
+.aren{}
+.boreal{}
+.js{
+    background-color: $js;
+}
+.locomotora{
+    background-color: $locomotora;
+}
+.sanrio{
+    background-color: $sanrio;
+}
+.thorns{}
+.unity{
+}
 .worka{
+    background-color: $worka;
 
     .project__card--img{
         max-width: 250px;
