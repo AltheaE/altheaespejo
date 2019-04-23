@@ -125,18 +125,9 @@ header {
 }
 
 .jsProject {
-    .project-header {
-
-        h1,
-        p {
-            color: $textColour;
-        }
-
-        background-color:$js;
-
-        img {
-            width: 20%;
-        }
+  
+    .project-intro{
+        max-width: 100%;
     }
 
     .skills-wrapper {
