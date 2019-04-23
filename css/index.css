@@ -409,47 +409,47 @@ iframe {
 
 @keyframes noise-anim {
   0% {
-    clip: rect(69px, 9999px, 7px, 0); }
+    clip: rect(28px, 9999px, 73px, 0); }
   5% {
-    clip: rect(23px, 9999px, 53px, 0); }
+    clip: rect(36px, 9999px, 48px, 0); }
   10% {
-    clip: rect(96px, 9999px, 9px, 0); }
+    clip: rect(9px, 9999px, 91px, 0); }
   15% {
-    clip: rect(47px, 9999px, 57px, 0); }
+    clip: rect(55px, 9999px, 89px, 0); }
   20% {
-    clip: rect(52px, 9999px, 65px, 0); }
+    clip: rect(22px, 9999px, 16px, 0); }
   25% {
-    clip: rect(35px, 9999px, 82px, 0); }
+    clip: rect(100px, 9999px, 70px, 0); }
   30% {
-    clip: rect(3px, 9999px, 34px, 0); }
+    clip: rect(85px, 9999px, 17px, 0); }
   35% {
-    clip: rect(70px, 9999px, 43px, 0); }
+    clip: rect(15px, 9999px, 74px, 0); }
   40% {
-    clip: rect(43px, 9999px, 93px, 0); }
+    clip: rect(51px, 9999px, 96px, 0); }
   45% {
-    clip: rect(60px, 9999px, 12px, 0); }
+    clip: rect(7px, 9999px, 91px, 0); }
   50% {
-    clip: rect(60px, 9999px, 68px, 0); }
+    clip: rect(29px, 9999px, 92px, 0); }
   55% {
-    clip: rect(98px, 9999px, 47px, 0); }
+    clip: rect(1px, 9999px, 17px, 0); }
   60% {
-    clip: rect(59px, 9999px, 18px, 0); }
+    clip: rect(44px, 9999px, 38px, 0); }
   65% {
-    clip: rect(13px, 9999px, 57px, 0); }
+    clip: rect(22px, 9999px, 10px, 0); }
   70% {
-    clip: rect(62px, 9999px, 86px, 0); }
+    clip: rect(22px, 9999px, 54px, 0); }
   75% {
-    clip: rect(14px, 9999px, 28px, 0); }
+    clip: rect(14px, 9999px, 48px, 0); }
   80% {
-    clip: rect(70px, 9999px, 74px, 0); }
+    clip: rect(13px, 9999px, 1px, 0); }
   85% {
-    clip: rect(73px, 9999px, 14px, 0); }
+    clip: rect(66px, 9999px, 92px, 0); }
   90% {
-    clip: rect(4px, 9999px, 66px, 0); }
+    clip: rect(61px, 9999px, 2px, 0); }
   95% {
-    clip: rect(36px, 9999px, 70px, 0); }
+    clip: rect(89px, 9999px, 60px, 0); }
   100% {
-    clip: rect(70px, 9999px, 36px, 0); } }
+    clip: rect(62px, 9999px, 100px, 0); } }
 
 .glitch:after {
   content: attr(data-text);
@@ -465,47 +465,47 @@ iframe {
 
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(46px, 9999px, 36px, 0); }
+    clip: rect(17px, 9999px, 62px, 0); }
   5% {
-    clip: rect(99px, 9999px, 47px, 0); }
+    clip: rect(66px, 9999px, 6px, 0); }
   10% {
-    clip: rect(3px, 9999px, 5px, 0); }
+    clip: rect(25px, 9999px, 5px, 0); }
   15% {
-    clip: rect(59px, 9999px, 4px, 0); }
+    clip: rect(81px, 9999px, 70px, 0); }
   20% {
-    clip: rect(96px, 9999px, 16px, 0); }
+    clip: rect(77px, 9999px, 70px, 0); }
   25% {
-    clip: rect(76px, 9999px, 25px, 0); }
+    clip: rect(56px, 9999px, 8px, 0); }
   30% {
-    clip: rect(36px, 9999px, 24px, 0); }
+    clip: rect(40px, 9999px, 40px, 0); }
   35% {
-    clip: rect(68px, 9999px, 67px, 0); }
+    clip: rect(86px, 9999px, 61px, 0); }
   40% {
-    clip: rect(1px, 9999px, 26px, 0); }
+    clip: rect(33px, 9999px, 78px, 0); }
   45% {
-    clip: rect(67px, 9999px, 57px, 0); }
+    clip: rect(33px, 9999px, 86px, 0); }
   50% {
-    clip: rect(60px, 9999px, 55px, 0); }
+    clip: rect(87px, 9999px, 63px, 0); }
   55% {
-    clip: rect(66px, 9999px, 87px, 0); }
+    clip: rect(12px, 9999px, 95px, 0); }
   60% {
-    clip: rect(64px, 9999px, 70px, 0); }
+    clip: rect(34px, 9999px, 52px, 0); }
   65% {
-    clip: rect(17px, 9999px, 49px, 0); }
+    clip: rect(68px, 9999px, 2px, 0); }
   70% {
-    clip: rect(6px, 9999px, 90px, 0); }
+    clip: rect(44px, 9999px, 62px, 0); }
   75% {
-    clip: rect(98px, 9999px, 2px, 0); }
+    clip: rect(37px, 9999px, 8px, 0); }
   80% {
-    clip: rect(52px, 9999px, 67px, 0); }
+    clip: rect(4px, 9999px, 13px, 0); }
   85% {
-    clip: rect(86px, 9999px, 50px, 0); }
+    clip: rect(76px, 9999px, 49px, 0); }
   90% {
-    clip: rect(68px, 9999px, 73px, 0); }
+    clip: rect(72px, 9999px, 71px, 0); }
   95% {
-    clip: rect(100px, 9999px, 52px, 0); }
+    clip: rect(83px, 9999px, 86px, 0); }
   100% {
-    clip: rect(100px, 9999px, 96px, 0); } }
+    clip: rect(75px, 9999px, 56px, 0); } }
 
 .glitch:before {
   content: attr(data-text);
@@ -613,42 +613,20 @@ iframe {
     animation: stripe-slide 12s infinite linear forwards; }
 
 @media (max-width: 768px) {
-  .adobe {
-    background: url("../img/adobe/pokemonWeb.png");
-    background-size: cover;
-    /* transform: none; */ }
-  .worka {
-    background: url("../img/worka/dolzStatic.png");
-    background-size: cover;
-    /* transform: none; */ }
-  .entryscape {
-    background: url("../img/locked.png");
-    background-size: cover;
-    /* transform: none; */ }
-  .locomotora {
-    background: url("../img/locomotora/locomotoraStyle.png");
-    background-size: cover;
-    /* transform: none; */ }
-  .sanrio {
-    background: url("../img/sanrio/helloKityScreens.png");
-    background-size: cover;
-    /* transform: none; */ }
-  .aren {
-    background: url("../img/aren/aren.png");
-    background-size: cover;
-    /* transform: none; */ }
-  .unity {
-    background: url("../img/unity/unity.gif");
-    background-size: cover;
-    /* transform: none; */ }
-  .js {
-    background: url("../img/jsChallenge/drumkit.png");
-    background-size: cover;
-    /* transform: none; */ }
-  .th {
-    background: url("../img/thorns/clear.jpg");
-    background-size: cover;
-    /* transform: none; */ }
+  .project__card {
+    width: 350px; }
+    .project__card .project__card--description {
+      top: unset;
+      height: 200px;
+      margin-right: 0;
+      padding: 20px;
+      border-radius: 0; }
+      .project__card .project__card--description .btn {
+        display: none; }
+  .project__card.--left .project__card--description {
+    margin-left: 0; }
+  .worka .project__card--img {
+    max-width: 200px; }
   .mobile-back {
     display: flex; }
   .project-img {
@@ -662,17 +640,15 @@ iframe {
     justify-content: center; }
   .sanrioProject .content-wrapper > div {
     flex-wrap: wrap;
-    justify-content: center; } }
-
-@media (max-width: 768px) {
+    justify-content: center; }
   css-doodle, canvas, .intro--wrapper {
     max-height: 300px; }
-  .intro--h1 {
-    font-size: 40px; }
-  .intro--h2 {
-    font-size: 30px; }
-  .intro--text {
-    font-size: 24px; }
+    css-doodle .intro--h1, canvas .intro--h1, .intro--wrapper .intro--h1 {
+      font-size: 55px; }
+    css-doodle .intro--h2, canvas .intro--h2, .intro--wrapper .intro--h2 {
+      font-size: 30px; }
+    css-doodle .intro--text, canvas .intro--text, .intro--wrapper .intro--text {
+      font-size: 24px; }
   .project-intro-wrapper {
     margin-top: 10px; }
     .project-intro-wrapper .skills-wrapper {
@@ -689,11 +665,7 @@ iframe {
     font-size: 14px;
     text-align: end; }
   .btn--back img {
-    display: none; }
-  .unityProject .project-header img {
-    width: 50%; }
-  .jsProject .project-header img {
-    width: 40%; } }
+    display: none; } }
 
 @media (min-width: 769px) and (max-width: 1440px) {
   .intro--h1 {

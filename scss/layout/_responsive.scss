@@ -1,56 +1,58 @@
 @media(max-width:768px){
+
+  .project__card{
+    width: 350px;
+    
+    .project__card--description{
+      top:unset;
+      height: 200px;
+      margin-right: 0;
+      padding: 20px;
+      border-radius: 0;
+      .btn{
+        display: none;
+      }
+     
+      }
+      
+  }
+  .project__card.--left{
+    .project__card--description{
+      margin-left: 0;
+
+    }
+  }
   .adobe {
-        background: url("../img/adobe/pokemonWeb.png");
-        background-size: cover;
-        /* transform: none; */
     }
 
 .worka {
-        background: url("../img/worka/dolzStatic.png");
-        background-size: cover;
-        /* transform: none; */
+  .project__card--img{
+    max-width: 200px;
+  }
     }
 
 .entryscape {
-        background: url("../img/locked.png");
-        background-size: cover;
-        /* transform: none; */
     }
 
 .locomotora {
-        background: url("../img/locomotora/locomotoraStyle.png");
-        background-size: cover;
-        /* transform: none; */
     }
 
 .sanrio {
-        background: url("../img/sanrio/helloKityScreens.png");
-        background-size: cover;
-        /* transform: none; */
     }
 
 .aren {
-        background: url("../img/aren/aren.png");
-        background-size: cover;
-        /* transform: none; */
+    
     }
 
 .unity {
-        background: url("../img/unity/unity.gif");
-        background-size: cover;
-        /* transform: none; */
+        
     }
 
 .js {
-        background: url("../img/jsChallenge/drumkit.png");
-        background-size: cover;
-        /* transform: none; */
     }
 
 .th {
-        background: url("../img/thorns/clear.jpg");
-        background-size: cover;
-        /* transform: none; */
+        
     }
 
 
@@ -80,21 +82,21 @@
           justify-content: center;
       }
   }
-}
-@media(max-width:768px){
+
 
   css-doodle, canvas, .intro--wrapper{
     max-height: 300px;
+    .intro--h1{
+      font-size: 55px;
+  }
+  .intro--h2{
+      font-size: 30px;
+  }
+  .intro--text{
+      font-size: 24px;
+  }
 }
-.intro--h1{
-    font-size: 40px;
-}
-.intro--h2{
-    font-size: 30px;
-}
-.intro--text{
-    font-size: 24px;
-}
+
 .project-intro-wrapper{
   margin-top:10px;
   .skills-wrapper{
@@ -124,20 +126,7 @@
 .btn--back img{
  display: none;
 }
-.unityProject{
-  .project-header{
-    img{
-      width: 50%;
-    }
-  }
-}
-.jsProject{
-  .project-header{
-    img{
-      width: 40%;
-    }
-  }
-}
+
 }
 @media(min-width:769px)and (max-width:1440px){
   .intro--h1{
