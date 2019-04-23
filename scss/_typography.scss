@@ -160,6 +160,11 @@ li{
     background-color:$locomotora;
   }
 }
+.jsProject{
+  .reveal-text::after{
+    background-color:$js;
+  }
+}
 
 
 
@@ -193,5 +198,11 @@ li{
 .locomotoraProject {
   .title-underlined {
       border-bottom: 2px solid $locomotora;
+  }
+}
+
+.jsProject {
+  .title-underlined {
+      border-bottom: 2px solid $js;
   }
 }
